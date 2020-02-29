@@ -2,7 +2,7 @@ CustomScenario
 {
 	campaignID = UnderSieged
 	campaignOrderIdx = 0
-	scenarioName = UnderSieged AllKyda@!#%
+	scenarioName = UnderSieged Terrorist
 	scenarioID = FirstHope
 	scenarioDescription = Talliban Has Taken Over Western Hawaii and working their way to my House... I Need A Mirical...
 	mapID = HAWAII Honolulu
@@ -19,7 +19,7 @@ CustomScenario
 	refuelWptID = wpt:8
 	envName = morning
 	selectableEnv = True
-	qsMode = Anywhere
+	qsMode = Center
 	qsLimit = -1
 	UNITS
 	{
