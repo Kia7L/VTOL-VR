@@ -1,0 +1,427 @@
+CustomScenario
+{
+	gameVersion = 0.0.14f1
+	campaignID = F-45.UnderSieged
+	campaignOrderIdx = 0
+	scenarioName = HawaiiUnderSieged
+	scenarioID = F-45
+	scenarioDescription = Terrorist Made Their Way East Is Aproaching Western-South Honolulu... YouShould See Some Action Western of the Map...
+	mapID = HAWAII Honolulu
+	vehicle = F-45A
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	forcedEquips = ;;;;;;;;;;;
+	equipsOnComplete = f45_gbu12x2Internal;f45_gbu12x1;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 150000
+	isTraining = False
+	rtbWptID = wpt:1
+	refuelWptID = wpt:0
+	envName = morning
+	selectableEnv = True
+	qsMode = Anywhere
+	qsLimit = -1
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Aircraft Carrier
+			globalPosition = (56008.6923828125, -5, 4293.552734375)
+			unitInstanceID = 1
+			unitID = AlliedCarrier
+			rotation = (0, 28.56121, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Allied:Foxtrot
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 0
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = True
+				carrierSpawns = 0:-1;1:-1;2:4;3:-1;4:-1;5:5;6:-1;7:-1;8:-1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-45A
+			globalPosition = (55927.949340820313, 18.97998046875, 4219.8917236328125)
+			unitInstanceID = 4
+			unitID = F-45A AI
+			rotation = (6.299549E-06, 82.54694, -3.143708E-06)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:November
+				voiceProfile = null
+				defaultBehavior = Parked
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-45.Player1
+			globalPosition = (56023.636962890625, 18.97998046875, 4261.542236328125)
+			unitInstanceID = 5
+			unitID = PlayerSpawn
+			rotation = (0, 329.9112, 0)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = Allied:Bravo
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (29789.1650390625, -5, 140663.01953125)
+			unitInstanceID = 6
+			unitID = DroneGunBoat
+			rotation = (0, 195.4044, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 2
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (25927.488159179688, -5, 139771.96240234375)
+			unitInstanceID = 7
+			unitID = DroneGunBoat
+			rotation = (0, 217.7485, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 2
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Rocket Boat
+			globalPosition = (30198.427978515625, -5, 145769.9287109375)
+			unitInstanceID = 8
+			unitID = DroneGunBoatRocket
+			rotation = (0, 182.1819, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Move_To_Waypoint
+				defaultWaypoint = 1
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (27367.295654296875, -5, 137497.3916015625)
+			unitInstanceID = 9
+			unitID = DroneGunBoat
+			rotation = (0, 199.9417, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = 1
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Rocket Boat
+			globalPosition = (35363.052734375, -5, 148240.5380859375)
+			unitInstanceID = 10
+			unitID = DroneGunBoatRocket
+			rotation = (0, 199.9417, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 2
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry MANPADS
+			globalPosition = (95618.584045410156, 411.041015625, 12275.94775390625)
+			unitInstanceID = 12
+			unitID = AlliedSoldierMANPAD
+			rotation = (15.76667, 213.2973, 341.9841)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry MANPADS
+			globalPosition = (95690.780830383301, 445.716064453125, 12194.05256652832)
+			unitInstanceID = 13
+			unitID = AlliedSoldierMANPAD
+			rotation = (2.532809, 188.0288, 332.778)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 0
+			name = aircraft carrier
+			loop = True
+			points = (56287.15625, 676.52734375, 5653.1875);(68626.1796875, 676.52734375, 14383.59375);(74822.205078125, 676.52734375, 8958.921875);(74413.923828125, 676.52734375, 5624.84375);(62427.568359375, 676.52734375, -2843.6015625);(56680.134765625, 676.52734375, -3568.6171875);(54407.875, 676.52734375, 1898.2421875);
+			pathMode = Smooth
+		}
+		PATH
+		{
+			id = 1
+			name = SideKick
+			loop = True
+			points = (105992.0625, 2495.9609375, -8487.8125);(119649, 2495.9609375, 5204.6171875);(135513.7734375, 1375.76171875, 14591.5234375);(138054.07421875, 1375.76171875, 27146.59375);(116633.1171875, 1245.51953125, 17858.5234375);(96010.78515625, 1245.51953125, 9251.453125);(71013.8046875, 1245.51953125, 17838.6640625);(37679.828125, 1245.51953125, 33843.375);(29496.3671875, 2349.603515625, 32246.703125);(36369.640625, 1375.76171875, 19557.2421875);(79515.888671875, 1375.76171875, -17709.265625);(93933.203125, 1375.76171875, -16894.765625);
+			pathMode = Smooth
+		}
+		PATH
+		{
+			id = 2
+			name = terrorist
+			loop = False
+			points = (24480.09375, -5, 134080.3359375);(565.0390625, -5, 96326.015625);(31945.0625, -5, 19118.265625);(57284.609375, -5, -6598.3984375);(82931.2265625, -5, -1990.75);(107309.109375, -5, 15827.7734375);
+			pathMode = Smooth
+		}
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = AirCraftCarrier
+			globalPoint = (64332.564453125, 3506.052734375, 4467.8408203125)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = Coast
+			globalPoint = (34510.386535644531, -5, 98958.265258789063)
+		}
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Foxtrot = 1;1;
+			November = 2;4;
+			Bravo = 2;5;
+		}
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = New Objective
+			objectiveInfo = 
+			objectiveID = 0
+			required = True
+			completionReward = 0
+			waypoint = 1
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Destroy
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 5
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 1
+							name = wpt
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Send Wpt to GPS
+						methodName = SendWaypointToGPS
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Target Group
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,10)
+							}
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+						}
+						ParamInfo
+						{
+							type = Waypoint
+							value = 0
+							name = Waypoint
+						}
+					}
+				}
+			}
+			fields
+			{
+				targets = 6;7;8;9;10;
+				minRequired = 4
+				perUnitReward = 2000
+				fullCompleteBonus = 5000
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = TakeOff With The Carrier... Go West Fast... There Coming...
+			imagePath = 7LExample\images.jpg
+			audioClipPath = 7LExample\radioMessages\e1_intro.ogg
+		}
+		BRIEFING_NOTE
+		{
+			text = Be Warned we have Been at this for days.. Beaware of any changes... JETS or SAMS...
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = Dont Forget to gas her up... more than half.. Its a long way...
+			imagePath = 
+			audioClipPath = 
+		}
+	}
+	ResourceManifest
+	{
+		0 = 7LExample\images.jpg
+		1 = 7LExample\radioMessages\e1_intro.ogg
+	}
+}
+

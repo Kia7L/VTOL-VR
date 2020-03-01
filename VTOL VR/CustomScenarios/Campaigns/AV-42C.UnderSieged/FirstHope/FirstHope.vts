@@ -1,0 +1,323 @@
+CustomScenario
+{
+	campaignID = AV-42C.UnderSieged
+	campaignOrderIdx = 0
+	scenarioName = UnderSieged Terrorist
+	scenarioID = FirstHope
+	scenarioDescription = Talliban Has Taken Over Western Hawaii and working their way to my House... I Need A Help...
+	mapID = Honolulu HAWAII 
+	vehicle = AV-42C
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;
+	forcedEquips = m230;h70-x19;h70-x19;hellfirex4;hellfirex4;agm89x1;agm89x1;
+	equipsOnComplete = av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 200000
+	isTraining = False
+	rtbWptID = wpt:5
+	refuelWptID = wpt:8
+	envName = morning
+	selectableEnv = True
+	qsMode = Center
+	qsLimit = -1
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Start Player1
+			globalPosition = (76178.003662109375, 136.49765014648438, 24493.060546875)
+			unitInstanceID = 0
+			unitID = PlayerSpawn
+			rotation = (1.317927E-07, 0.8844808, -8.536719E-06)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = null
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (57280.201171875, -5, 132868.19873046875)
+			unitInstanceID = 2
+			unitID = DroneGunBoat
+			rotation = (0, 206.6644, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 1
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (57449.068298339844, -5, 132976.15374755859)
+			unitInstanceID = 3
+			unitID = DroneGunBoat
+			rotation = (0, 206.6644, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 1
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (57295.153717041016, -5, 133122.20660400391)
+			unitInstanceID = 4
+			unitID = DroneGunBoat
+			rotation = (0, 206.6644, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 1
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Rocket Boat
+			globalPosition = (59290.571533203125, -5, 136903.98309326172)
+			unitInstanceID = 5
+			unitID = DroneGunBoatRocket
+			rotation = (0, 218.2831, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 3
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Rocket Boat
+			globalPosition = (60329.786010742188, -5, 140465.1796875)
+			unitInstanceID = 6
+			unitID = DroneGunBoatRocket
+			rotation = (0, 209.012, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Navigate_Path
+				defaultWaypoint = null
+				defaultPath = 1
+				engageEnemies = True
+				detectionMode = Force_Detected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 1
+			name = DoomsDay
+			loop = False
+			points = (56125.328125, -5, 132171.5625);(781.59375, -5, 97624.4375);(40984.0078125, -5, 8748.015625);(99430.921875, -5, 9349.0703125);(107338.671875, -5, 15743.7421875);(109370.390625, -5, 16528.953125);
+			pathMode = Smooth
+		}
+		PATH
+		{
+			id = 3
+			name = Cove
+			loop = False
+			points = (57578.828125, 134.58984375, 133915.9375);(32759.3203125, 134.58984375, 106915.09375);(33987.96484375, 134.58984375, 100586.625);(32663.15234375, 134.58984375, 99774.078125);
+			pathMode = Smooth
+		}
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 7
+			name = Tango
+			globalPoint = (33633.23681640625, 3411.816650390625, 99366.6572265625)
+		}
+		WAYPOINT
+		{
+			id = 8
+			name = HomeBase
+			globalPoint = (76051.500164031982, 136.49862670898438, 24625.974975585938)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = ClearZone Zexta
+			globalPoint = (7627.439453125, 4501.1240234375, 94572.8232421875)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = CearZone Delta
+			globalPoint = (32943.16796875, 4501.1240234375, 95068.99609375)
+		}
+	}
+	UNITGROUPS
+	{
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = New Objective
+			objectiveInfo = 
+			objectiveID = 0
+			required = True
+			completionReward = 0
+			waypoint = 4
+			autoSetWaypoint = True
+			startMode = Immediate
+			objectiveType = Destroy
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 0
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 7
+							name = wpt
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 0
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 8
+							name = wpt
+						}
+					}
+				}
+			}
+			fields
+			{
+				targets = 2;3;4;5;6;
+				minRequired = 2
+				perUnitReward = 45065.35
+				fullCompleteBonus = 70414.6
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = CampWildBush
+			baseTeam = Allied
+		}
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = This Just In...///nHonolulu Is Under Attact...///nThey Seem To Be A Medium Force Makeing Their Way South-East...///nThey Have 5-8 Millitary Boats...
+			imagePath = Example\missionThumbnail.jpg
+			audioClipPath = 7LExample\radioMessages\DESTROY.ogg
+		}
+		BRIEFING_NOTE
+		{
+			text = UN-KNOWN-FIREPOWER That they may have... They Seem To Be Armed With AK-47's...///nBe Advized For Any Air Defenseive Attacts or Weapons...
+			imagePath = 7LExample\sevtf_rend48.png
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = After Their Surrender... Return Back To Home Base...Marked By FINISH OBJECTIVE///nRemember To Have Above Half Tank of Fuel...
+			imagePath = 7LExample\Hawaii-Diamond.jpg
+			audioClipPath = 
+		}
+	}
+	ResourceManifest
+	{
+		0 = Example\missionThumbnail.jpg
+		1 = 7LExample\radioMessages\DESTROY.ogg
+		2 = 7LExample\sevtf_rend48.png
+		3 = 7LExample\Hawaii-Diamond.jpg
+	}
+}
+
