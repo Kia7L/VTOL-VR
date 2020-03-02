@@ -27,18 +27,18 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Aircraft Carrier
-			globalPosition = (56008.6923828125, -5, 4293.552734375)
+			globalPosition = (64214.804077148438, -5, 13305.1455078125)
 			unitInstanceID = 1
 			unitID = AlliedCarrier
-			rotation = (0, 28.56121, 0)
+			rotation = (0, 87.02732, 0)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
 			{
 				unitGroup = Allied:Foxtrot
-				defaultBehavior = Navigate_Path
+				defaultBehavior = Parked
 				defaultWaypoint = null
-				defaultPath = 0
+				defaultPath = null
 				engageEnemies = True
 				detectionMode = Force_Detected
 				spawnOnStart = True
@@ -49,40 +49,40 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = F-45A
-			globalPosition = (55927.949340820313, 18.97998046875, 4219.8917236328125)
+			globalPosition = (64109.7919921875, 18.97998046875, 13335.4404296875)
 			unitInstanceID = 4
 			unitID = F-45A AI
-			rotation = (6.299549E-06, 82.54694, -3.143708E-06)
+			rotation = (6.299548E-06, 141.0131, -3.143708E-06)
 			spawnChance = 100
 			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Allied:November
 				voiceProfile = null
-				defaultBehavior = Parked
+				defaultBehavior = TakeOff
 				initialSpeed = 280
 				defaultNavSpeed = 280
 				defaultOrbitPoint = null
-				defaultPath = null
-				orbitAltitude = 3000
+				defaultPath = 1
+				orbitAltitude = 1349.224
 				fuel = 100
 				autoRefuel = True
 				autoRTB = True
 				defaultRadarEnabled = True
-				rtbDestination = 
+				rtbDestination = unit:1
 				engageEnemies = True
-				detectionMode = Default
+				detectionMode = Force_Detected
 				spawnOnStart = True
-				invincible = False
+				invincible = True
 			}
 		}
 		UnitSpawner
 		{
 			unitName = F-45.Player1
-			globalPosition = (56023.636962890625, 18.97998046875, 4261.542236328125)
+			globalPosition = (64195.3369140625, 18.97998046875, 13275.666015625)
 			unitInstanceID = 5
 			unitID = PlayerSpawn
-			rotation = (0, 329.9112, 0)
+			rotation = (0, 28.37733, 0)
 			spawnChance = 100
 			spawnFlags = carrier;
 			UnitFields
@@ -147,7 +147,7 @@ CustomScenario
 			{
 				unitGroup = null
 				defaultBehavior = Move_To_Waypoint
-				defaultWaypoint = 1
+				defaultWaypoint = 2
 				defaultPath = null
 				engageEnemies = True
 				detectionMode = Force_Detected
@@ -168,7 +168,7 @@ CustomScenario
 			{
 				unitGroup = null
 				defaultBehavior = Parked
-				defaultWaypoint = 1
+				defaultWaypoint = 2
 				defaultPath = null
 				engageEnemies = True
 				detectionMode = Force_Detected
@@ -244,18 +244,10 @@ CustomScenario
 	{
 		PATH
 		{
-			id = 0
-			name = aircraft carrier
-			loop = True
-			points = (56287.15625, 676.52734375, 5653.1875);(68626.1796875, 676.52734375, 14383.59375);(74822.205078125, 676.52734375, 8958.921875);(74413.923828125, 676.52734375, 5624.84375);(62427.568359375, 676.52734375, -2843.6015625);(56680.134765625, 676.52734375, -3568.6171875);(54407.875, 676.52734375, 1898.2421875);
-			pathMode = Smooth
-		}
-		PATH
-		{
 			id = 1
 			name = SideKick
 			loop = True
-			points = (105992.0625, 2495.9609375, -8487.8125);(119649, 2495.9609375, 5204.6171875);(135513.7734375, 1375.76171875, 14591.5234375);(138054.07421875, 1375.76171875, 27146.59375);(116633.1171875, 1245.51953125, 17858.5234375);(96010.78515625, 1245.51953125, 9251.453125);(71013.8046875, 1245.51953125, 17838.6640625);(37679.828125, 1245.51953125, 33843.375);(29496.3671875, 2349.603515625, 32246.703125);(36369.640625, 1375.76171875, 19557.2421875);(79515.888671875, 1375.76171875, -17709.265625);(93933.203125, 1375.76171875, -16894.765625);
+			points = (105992.0625, 2495.9609375, -8487.8125);(119649, 2495.9609375, 5204.6171875);(135513.78125, 1375.76171875, 14591.5234375);(138054.078125, 1375.76171875, 27146.59375);(116633.1171875, 1245.51953125, 17858.5234375);(96010.78125, 1245.51953125, 9251.453125);(71013.8046875, 1245.51953125, 17838.6640625);(37679.828125, 1245.51953125, 33843.375);(29496.3671875, 2349.603515625, 32246.703125);(36369.640625, 1375.76171875, 19557.2421875);(79515.890625, 1375.76171875, -17709.265625);(93933.203125, 1375.76171875, -16894.765625);
 			pathMode = Smooth
 		}
 		PATH
@@ -263,7 +255,7 @@ CustomScenario
 			id = 2
 			name = terrorist
 			loop = False
-			points = (24480.09375, -5, 134080.3359375);(565.0390625, -5, 96326.015625);(31945.0625, -5, 19118.265625);(57284.609375, -5, -6598.3984375);(82931.2265625, -5, -1990.75);(107309.109375, -5, 15827.7734375);
+			points = (24480.09375, -5, 134080.34375);(565.0390625, -5, 96326.015625);(31945.0625, -5, 19118.265625);(57284.609375, -5, -6598.40625);(82931.2265625, -5, -1990.75);(107309.109375, -5, 15827.7734375);
 			pathMode = Smooth
 		}
 	}
@@ -279,7 +271,13 @@ CustomScenario
 		{
 			id = 1
 			name = Coast
-			globalPoint = (34510.386535644531, -5, 98958.265258789063)
+			globalPoint = (34642.861572265625, 591.07708740234375, 98771.30322265625)
+		}
+		WAYPOINT
+		{
+			id = 2
+			name = TerroristCoast
+			globalPoint = (34489.265716552734, -5, 98850.841796875)
 		}
 	}
 	UNITGROUPS
@@ -384,6 +382,209 @@ CustomScenario
 	}
 	StaticObjects
 	{
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 0
+			globalPos = (76799.02392578125, 130.09131622314453, 24840.787033081055)
+			rotation = (0.1014982, 180.3021, 5.211029E-11)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 1
+			globalPos = (76799.02392578125, 127.45608520507813, 24840.787033081055)
+			rotation = (0.1015152, 180.3115, 5.211029E-11)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 2
+			globalPos = (76798.449371337891, 127.42709350585938, 24813.345581054688)
+			rotation = (0.1059585, 180.2153, 1.302757E-11)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 3
+			globalPos = (76798.362945556641, 130.06226348876953, 24813.31103515625)
+			rotation = (0.1059473, 180.2055, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 4
+			globalPos = (76799.112762451172, 127.507568359375, 24868.259490966797)
+			rotation = (0.1057323, 180.2202, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 5
+			globalPos = (76799.112762451172, 130.14279937744141, 24868.259490966797)
+			rotation = (0.1057151, 180.2104, 0)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 6
+			globalPos = (76154.263515472412, 136.49859619140625, 24482.425643920898)
+			rotation = (-5.024245E-08, 180.3372, 8.537588E-06)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 7
+			globalPos = (75966.770736694336, 136.4986572265625, 24488.278427124023)
+			rotation = (-5.024245E-08, 180.3372, 8.537588E-06)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 8
+			globalPos = (75763.726699829102, 136.4986572265625, 24493.888458251953)
+			rotation = (-5.024246E-08, 180.3372, 8.53759E-06)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 9
+			globalPos = (76155.522048950195, 136.49859619140625, 24460.369720458984)
+			rotation = (8.53763E-06, 89.71416, -4.07111E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 10
+			globalPos = (76155.522048950195, 139.13381958007813, 24460.369720458984)
+			rotation = (-1.699007E-06, 89.71416, 1.017778E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 11
+			globalPos = (75963.878929138184, 139.13385009765625, 24461.911346435547)
+			rotation = (1.248199E-06, 93.82423, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 12
+			globalPos = (75963.878929138184, 136.49862670898438, 24461.911346435547)
+			rotation = (8.518726E-06, 93.82423, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 13
+			globalPos = (75762.313568115234, 139.13385772705078, 24463.4951171875)
+			rotation = (1.21109E-06, 94.13094, -5.088888E-14)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 14
+			globalPos = (75762.162368774414, 136.49863433837891, 24463.569580078125)
+			rotation = (8.515555E-06, 94.13094, -4.07111E-13)
+		}
+		StaticObject
+		{
+			prefabID = helipad
+			id = 31
+			globalPos = (76156.881454467773, 136.49862670898438, 24573.98698425293)
+			rotation = (0, 2.350141, 0)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 17
+			globalPos = (75759.98494720459, 136.4986572265625, 24493.975921630859)
+			rotation = (3.388654E-07, 2.274685, -8.531008E-06)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 18
+			globalPos = (75761.53636932373, 136.4986572265625, 24483.467681884766)
+			rotation = (3.388654E-07, 2.274685, -8.531008E-06)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 19
+			globalPos = (75761.825164794922, 136.49864196777344, 24506.719268798828)
+			rotation = (3.388654E-07, 2.274685, -8.531008E-06)
+		}
+		StaticObject
+		{
+			prefabID = MilTent
+			id = 20
+			globalPos = (75757.337158203125, 136.4986572265625, 24506.798927307129)
+			rotation = (3.388654E-07, 2.274685, -8.531008E-06)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 21
+			globalPos = (75765.175003051758, 136.49866485595703, 24538.245834350586)
+			rotation = (-8.534511E-06, 271.5748, -4.07111E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 22
+			globalPos = (75765.175003051758, 139.13388824462891, 24538.245834350586)
+			rotation = (-1.849437E-05, 271.5748, -8.14222E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 23
+			globalPos = (75780.799621582031, 136.49863433837891, 24484.049423217773)
+			rotation = (-2.987276E-07, 182.0051, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 24
+			globalPos = (75724.630317687988, 136.49868011474609, 24541.684562683105)
+			rotation = (-8.640811E-06, 269.4997, -4.07111E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 25
+			globalPos = (75724.630317687988, 139.13390350341797, 24541.684562683105)
+			rotation = (-1.719851E-05, 269.3049, -8.14222E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 26
+			globalPos = (75780.799621582031, 139.13385772705078, 24484.049423217773)
+			rotation = (-6.83721E-06, 182.0051, 1.272222E-14)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 27
+			globalPos = (75781.425689697266, 136.49864196777344, 24510.312684059143)
+			rotation = (-2.987276E-07, 182.0051, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 28
+			globalPos = (75781.425689697266, 139.13386535644531, 24510.312684059143)
+			rotation = (-6.83721E-06, 182.0051, 1.272222E-14)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteWallX5
+			id = 29
+			globalPos = (75788.082160949707, 136.4986572265625, 24496.881196022034)
+			rotation = (-2.987276E-07, 182.0051, 0)
+		}
 	}
 	Conditionals
 	{
@@ -393,7 +594,7 @@ CustomScenario
 		BaseInfo
 		{
 			id = 2
-			overrideBaseName = 
+			overrideBaseName = Victor
 			baseTeam = Allied
 		}
 	}
