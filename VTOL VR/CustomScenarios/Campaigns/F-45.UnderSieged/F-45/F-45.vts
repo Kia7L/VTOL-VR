@@ -8,8 +8,8 @@ CustomScenario
 	scenarioDescription = Terrorist Made Their Way East Is Aproaching Western-South Honolulu... YouShould See Some Action Western of the Map...
 	mapID = HAWAII Honolulu
 	vehicle = F-45A
-	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
-	forcedEquips = ;;;;;;;;;;;
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;hellfirex4;
+	forcedEquips = forcedEquips = m230;h70-x19;h70-x19;hellfirex4;hellfirex4;agm89x1;agm89x1;
 	equipsOnComplete = f45_gbu12x2Internal;f45_gbu12x1;
 	forceEquips = False
 	normForcedFuel = 1
