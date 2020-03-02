@@ -4,7 +4,7 @@ CAMPAIGN
 	campaignName = F-45 Hawaii
 	description = Terrorist Reported Along The Coast Of Western NorthShore... The Seem To Be Driving Boats.. 11-19 of them..Armded With Sams,Ak's,and Maurad.
 	vehicle = F-45A
-	startingEquips = f45_gun;h70-x7;h70-4x4;h70-x19;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	startingEquips = f45_gun;h70-x7;h70-4x4;h70-x19;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4;hellfirex4;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
 	availability = Sequential
 }
 
