@@ -1,0 +1,21 @@
+VTMapCustom
+{
+	mapID = Honolulu
+	mapName = Honolulu
+	mapDescription = vers7L
+	mapType = HeightMap
+	edgeMode = Water
+	biome = Boreal
+	seed = seed
+	mapSize = 42
+	TerrainSettings
+	{
+	}
+	StaticPrefabs
+	{
+	}
+	BezierRoads
+	{
+	}
+}
+
