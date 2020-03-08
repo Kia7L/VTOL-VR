@@ -1,0 +1,13 @@
+VTMapCustom
+{
+	mapID = hmapper1
+	mapType = HeightMap
+	edgeMode = Hills
+	biome = Boreal
+	seed = seed
+	mapSize = 64
+	TerrainSettings
+	{
+	}
+}
+

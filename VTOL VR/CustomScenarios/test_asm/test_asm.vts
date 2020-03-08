@@ -1,0 +1,144 @@
+CustomScenario
+{
+	gameVersion = 0.0.14p16
+	campaignID = 
+	campaignOrderIdx = -1
+	scenarioName = ASM Test
+	scenarioID = test_asm
+	scenarioDescription = Send GPS path via action.  Fire ASM on path to target.
+	mapID = map_asmTest
+	vehicle = AV-42C
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;
+	forcedEquips = m230;;agm89x1;agm89x1;;agm89x1;agm89x1;
+	forceEquips = True
+	normForcedFuel = 1
+	equipsConfigurable = False
+	baseBudget = 100000
+	isTraining = False
+	rtbWptID = 
+	refuelWptID = 
+	envName = day
+	selectableEnv = False
+	qsMode = Anywhere
+	qsLimit = -1
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Player
+			globalPosition = (-5514.419921875, 1337.17724609375, -504.46337890625)
+			unitInstanceID = 0
+			unitID = PlayerSpawn
+			rotation = (0, 63.43256, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				startMode = FlightReady
+				initialSpeed = 215.0637
+				unitGroup = null
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NMSS Cruiser
+			globalPosition = (13410.822509765625, -5, 23029.428344726563)
+			unitInstanceID = 1
+			unitID = ESuperMissileCruiser
+			rotation = (0, 63.43256, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 0
+			name = ASM Path
+			loop = False
+			points = (6135.22265625, 685.95703125, 4800.96875);(11325.0537109375, -5, 5178.8046875);(12628.7578125, -5, 7045.6953125);(11992.7099609375, 147.33544921875, 10363.43798828125);(17890.685546875, -5, 16021.5);(13684.8671875, -5, 22602.09375);
+			pathMode = Linear
+		}
+	}
+	WAYPOINTS
+	{
+	}
+	UNITGROUPS
+	{
+	}
+	TimedEventGroups
+	{
+		TimedEventGroup
+		{
+			groupName = Send Path
+			groupID = 0
+			beginImmediately = True
+			initialDelay = 0
+			TimedEventInfo
+			{
+				eventName = Send GPS Path
+				time = 0
+				EventTarget
+				{
+					targetType = System
+					targetID = 0
+					eventName = Send Path to GPS
+					methodName = SendPathToGPS
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Target Group
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,10)
+						}
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+					}
+					ParamInfo
+					{
+						type = FollowPath
+						value = 0
+						name = Path
+					}
+				}
+			}
+		}
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+	}
+	Briefing
+	{
+	}
+}
+

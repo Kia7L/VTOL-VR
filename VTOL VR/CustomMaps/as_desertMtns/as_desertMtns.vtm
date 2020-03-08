@@ -1,0 +1,32 @@
+VTMapCustom
+{
+	mapID = as_desertMtns
+	mapName = AS_DesertMtns
+	mapDescription = A large desert map with scattered mountains, canyons, and plains.
+	mapType = HeightMap
+	edgeMode = Hills
+	biome = Desert
+	seed = seed
+	mapSize = 64
+	TerrainSettings
+	{
+	}
+	StaticPrefabs
+	{
+		StaticPrefab
+		{
+			prefab = airbase1
+			id = 0
+			globalPos = (76638.981689453125, 903.468017578125, 144192.40161132813)
+			rotation = (0, 282.7137, 0)
+			grid = (24,46)
+			tSpacePos = (-2910.982, 2880.402, 903.4679)
+			terrainToLocalMatrix = -0.2200803;0.975482;-1.162865E-07;-3450.429;0;-1.192093E-07;1;-903.468;0.9754821;0.2200803;-2.623561E-08;2205.69;0;0;0;1;
+			baseName = Lone Base
+		}
+	}
+	BezierRoads
+	{
+	}
+}
+

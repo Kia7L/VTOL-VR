@@ -1,0 +1,1651 @@
+CustomScenario
+{
+	campaignID = 
+	campaignOrderIdx = -1
+	scenarioName = Dangerous Transport
+	scenarioID = example1
+	scenarioDescription = Example AV-42C scenario.
+	mapID = map_akutan
+	vehicle = AV-42C
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;
+	forcedEquips = ;;;;;;;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 100000
+	isTraining = False
+	rtbWptID = unit:6
+	refuelWptID = unit:50
+	envName = morning
+	selectableEnv = True
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38583.07421875, 0, 29732.3046875)
+			unitInstanceID = 0
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38590.25390625, 0, 29724.6875)
+			unitInstanceID = 1
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38596.44140625, 0, 29735.1484375)
+			unitInstanceID = 2
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38588.21875, 0, 29744.74609375)
+			unitInstanceID = 3
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38582.609375, 0, 29723.05859375)
+			unitInstanceID = 4
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (38589.94921875, 0, 29715.2734375)
+			unitInstanceID = 5
+			unitID = AlliedSoldier
+			rotation = (6.83019E-06, 0.0002268122, 2.642746E-11)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Carrier
+			globalPosition = (68698.2265625, -5, 23718.26953125)
+			unitInstanceID = 6
+			unitID = AlliedCarrier
+			rotation = (0, 284.995, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				carrierSpawns = 0:-1;1:10;2:11;3:13;4:-1;5:9;6:12;7:14;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (68462.0546875, -5, 24173.048828125)
+			unitInstanceID = 7
+			unitID = EscortCruiser
+			rotation = (0, 288.0204, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (69249.53125, -5, 23176.513671875)
+			unitInstanceID = 8
+			unitID = EscortCruiser
+			rotation = (0, 288.0204, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Player
+			globalPosition = (68722.6796875, 19.509765625, 23737.2900390625)
+			unitInstanceID = 9
+			unitID = PlayerSpawn
+			rotation = (0, 226.345, 0)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = Allied:Xray
+			}
+		}
+		UnitSpawner
+		{
+			unitName = AV-42C
+			globalPosition = (68812.1640625, 19.509765625, 23667.873046875)
+			unitInstanceID = 10
+			unitID = AV-42CAI
+			rotation = (6.335029E-06, 339.6349, 1.017778E-13)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:Xray
+				defaultBehavior = Orbit
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = AV-42C
+			globalPosition = (68788.7734375, 19.509765625, 23657.0576171875)
+			unitInstanceID = 11
+			unitID = AV-42CAI
+			rotation = (6.299549E-06, 338.9808, 0)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:Xray
+				defaultBehavior = Orbit
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F/A-26B
+			globalPosition = (68695.8984375, 19.509765625, 23745.9130859375)
+			unitInstanceID = 12
+			unitID = FA-26B AI
+			rotation = (0, 226.345, 0)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:Xray
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F/A-26B
+			globalPosition = (68828.65625, 19.509765625, 23704.7421875)
+			unitInstanceID = 13
+			unitID = FA-26B AI
+			rotation = (-6.011083E-06, 216.8744, -8.14222E-13)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:Xray
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F/A-26B
+			globalPosition = (68675.328125, 19.509765625, 23751.8369140625)
+			unitInstanceID = 14
+			unitID = FA-26B AI
+			rotation = (0, 226.345, 0)
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = Allied:Xray
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM FireCtrl Radar
+			globalPosition = (42106.03125, 0, 38316.056640625)
+			unitInstanceID = 15
+			unitID = SamFCR
+			rotation = (8.381492E-06, 110.66, 6.810232E-06)
+			spawnFlags = 
+			UnitFields
+			{
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher
+			globalPosition = (42074.84375, 0, 38701.556640625)
+			unitInstanceID = 16
+			unitID = SamBattery1
+			rotation = (9.819163E-06, 96.16653, 4.495868E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 15;20;
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = BSM-66;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = IRAPC
+			globalPosition = (36784.703125, 22.765625, 40987.912109375)
+			unitInstanceID = 17
+			unitID = IRAPC
+			rotation = (359.71, 227.5499, 358.4301)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MPA-155
+			globalPosition = (36689.203125, 20.8359375, 40955.22265625)
+			unitInstanceID = 18
+			unitID = Artillery
+			rotation = (1.549059, 227.7178, 0.1096996)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MPA-155
+			globalPosition = (36800.625, 22.345703125, 41078.3515625)
+			unitInstanceID = 19
+			unitID = Artillery
+			rotation = (359.5751, 227.7438, 0.7712287)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM FireCtrl Radar
+			globalPosition = (40409.1640625, 680.662109375, 36304.5078125)
+			unitInstanceID = 20
+			unitID = SamFCR
+			rotation = (353.6651, 166.862, 359.308)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher
+			globalPosition = (42071.15234375, 0, 38682.111328125)
+			unitInstanceID = 21
+			unitID = SamBattery1
+			rotation = (9.649155E-06, 98.25077, 4.850004E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 15;20;
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = BSM-66;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher
+			globalPosition = (42066.27734375, 0, 38662.064453125)
+			unitInstanceID = 22
+			unitID = SamBattery1
+			rotation = (9.649155E-06, 98.25077, 4.850004E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 15;20;
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = BSM-66;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM FireCtrl Radar
+			globalPosition = (32188.76171875, 0, 27329.857421875)
+			unitInstanceID = 23
+			unitID = SamFCR
+			rotation = (5.163548E-06, 133.0018, 9.485065E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM FireCtrl Radar
+			globalPosition = (30809.0390625, 0, 27317.01171875)
+			unitInstanceID = 24
+			unitID = SamFCR
+			rotation = (7.255722E-06, 224.9113, 7.233281E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher
+			globalPosition = (30856.421875, 0, 27307.912109375)
+			unitInstanceID = 25
+			unitID = SamBattery1
+			rotation = (1.024019E-05, 178.1935, -3.229842E-07)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 24;23;
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher
+			globalPosition = (32136.359375, 0, 27303.751953125)
+			unitInstanceID = 27
+			unitID = SamBattery1
+			rotation = (-3.090422E-06, 178.1935, 1.034785E-05)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 24;23;
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NMSS Cruiser
+			globalPosition = (18305.51953125, -5, 31971.328125)
+			unitInstanceID = 28
+			unitID = ESuperMissileCruiser
+			rotation = (0, 147.4046, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = DMS Cruiser
+			globalPosition = (17842.76171875, -5, 32205.826171875)
+			unitInstanceID = 29
+			unitID = DroneMissileCruiser
+			rotation = (0, 147.4046, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (38136.33203125, -5, 27436.59765625)
+			unitInstanceID = 30
+			unitID = DroneGunBoat
+			rotation = (0, 147.4046, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Gun Boat
+			globalPosition = (37770.21875, -5, 27390.044921875)
+			unitInstanceID = 31
+			unitID = DroneGunBoat
+			rotation = (0, 156.4116, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MBT2-E Tank
+			globalPosition = (36963.35546875, 41.4921875, 35863.66015625)
+			unitInstanceID = 32
+			unitID = enemyMBT1
+			rotation = (0.4141186, 110.1405, 0.005581238)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Path
+				defaultPath = 0
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MBT2-E Tank
+			globalPosition = (36943.82421875, 41.650390625, 35874.330078125)
+			unitInstanceID = 33
+			unitID = enemyMBT1
+			rotation = (0.4141186, 110.1405, 0.005581238)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Path
+				defaultPath = 0
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (36921.91796875, 41.23046875, 35874.68359375)
+			unitInstanceID = 34
+			unitID = SAAW
+			rotation = (0.4139052, 110.1406, 0.004681029)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Path
+				defaultPath = 0
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (36905.25390625, 41.404296875, 35887.44140625)
+			unitInstanceID = 35
+			unitID = SAAW
+			rotation = (1.982769, 110.1412, 0.02235322)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Path
+				defaultPath = 0
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-33
+			globalPosition = (510.6875, 4970.7109375, 69814.5)
+			unitInstanceID = 36
+			unitID = ASF-33
+			rotation = (0, 214.0711, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Orbit
+				initialSpeed = 310
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 5000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				equips = af_gun;asf_mrmx6;asf_srmx2Left;asf_srmx2Left;asf_droptank;asf_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-33
+			globalPosition = (574.25, 4970.7109375, 69751.67578125)
+			unitInstanceID = 37
+			unitID = ASF-33
+			rotation = (0, 214.0711, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Orbit
+				initialSpeed = 310
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 5000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				equips = af_gun;asf_mrmx6;asf_srmx2Left;asf_srmx2Left;asf_droptank;asf_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-33
+			globalPosition = (657.1640625, 4970.7109375, 69669.72265625)
+			unitInstanceID = 38
+			unitID = ASF-33
+			rotation = (0, 214.0711, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Orbit
+				initialSpeed = 310
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 5000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				equips = af_gun;asf_mrmx6;asf_srmx2Left;asf_srmx2Left;asf_droptank;asf_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Manta UCAV
+			globalPosition = (17560.0390625, 2944.1201171875, 30925.814453125)
+			unitInstanceID = 39
+			unitID = AIUCAV
+			rotation = (0, 136.0784, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Path
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = 2
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = eucav_gun;eucav_hellfire;eucav_hellfire;eucav_hellfire;eucav_hellfire;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Manta UCAV
+			globalPosition = (17531.95703125, 2944.1201171875, 30916.00390625)
+			unitInstanceID = 40
+			unitID = AIUCAV
+			rotation = (0, 136.0784, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Path
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = 2
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = eucav_gun;eucav_hellfire;eucav_hellfire;eucav_hellfire;eucav_hellfire;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Manta UCAV
+			globalPosition = (17501.203125, 2944.1201171875, 30916.365234375)
+			unitInstanceID = 41
+			unitID = AIUCAV
+			rotation = (0, 136.0784, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Path
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = 2
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = eucav_gun;eucav_hellfire;eucav_hellfire;eucav_hellfire;eucav_hellfire;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Manta UCAV
+			globalPosition = (17454.9765625, 2944.1201171875, 30918.833984375)
+			unitInstanceID = 42
+			unitID = AIUCAV
+			rotation = (0, 136.0784, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Path
+				initialSpeed = 180
+				defaultNavSpeed = 180
+				defaultOrbitPoint = null
+				defaultPath = 2
+				orbitAltitude = 3000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				equips = eucav_gun;eucav_hellfire;eucav_hellfire;eucav_hellfire;eucav_hellfire;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (28634.8125, 0.12890625, 30708.572265625)
+			unitInstanceID = 43
+			unitID = SAAW
+			rotation = (-8.952624E-06, 201.0026, -5.266125E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (28149.83203125, 0.12890625, 30950.43359375)
+			unitInstanceID = 44
+			unitID = SAAW
+			rotation = (-8.952624E-06, 201.0026, -5.266125E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (25504.81640625, 0, 46614.72265625)
+			unitInstanceID = 45
+			unitID = SAAW
+			rotation = (-1.028926E-05, 269.2473, -3.28021E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = IRAPC
+			globalPosition = (24510.8671875, 0, 46470.3359375)
+			unitInstanceID = 46
+			unitID = IRAPC
+			rotation = (4.739526E-06, 269.2473, -6.893157E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MBT2-E Tank
+			globalPosition = (23996.73828125, 0.5703125, 46960.39453125)
+			unitInstanceID = 47
+			unitID = enemyMBT1
+			rotation = (-8.972788E-08, 269.2473, -6.8296E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MBT2-E Tank
+			globalPosition = (24025.03515625, 0.5703125, 47035.26171875)
+			unitInstanceID = 48
+			unitID = enemyMBT1
+			rotation = (-4.486353E-08, 269.2473, -3.414799E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MBT2-E Tank
+			globalPosition = (23907.87109375, 0.5703125, 46981.94921875)
+			unitInstanceID = 49
+			unitID = enemyMBT1
+			rotation = (-4.486353E-08, 269.2473, -3.414799E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = KC-49
+			globalPosition = (84944.41796875, 3843.8974609375, 17567.6611328125)
+			unitInstanceID = 50
+			unitID = KC-49
+			rotation = (0, 308.2642, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Path
+				initialSpeed = 200
+				defaultNavSpeed = 200
+				defaultOrbitPoint = null
+				defaultPath = 3
+				orbitAltitude = 3500
+				fuel = 100
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fire Ctrl Radar P
+			globalPosition = (23456.11328125, 0, 47720.078125)
+			unitInstanceID = 51
+			unitID = PatRadarTrailer
+			rotation = (8.724578E-06, 324.5466, 6.364783E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fire Ctrl Radar P
+			globalPosition = (23501.7734375, 0, 47711.234375)
+			unitInstanceID = 52
+			unitID = PatRadarTrailer
+			rotation = (-5.065299E-06, 46.40643, 9.537895E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fire Ctrl Radar P
+			globalPosition = (23293.44921875, 0, 47618.20703125)
+			unitInstanceID = 53
+			unitID = PatRadarTrailer
+			rotation = (8.267185E-06, 248.388, -6.948551E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher P
+			globalPosition = (23471.1015625, 0, 47697.0625)
+			unitInstanceID = 54
+			unitID = PatriotLauncher
+			rotation = (9.656751E-06, 261.8391, -4.834861E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 51;52;53;56;
+				allowReload = True
+				reloadTime = 120
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-33
+			globalPosition = (708.6328125, 4970.7109375, 69618.8515625)
+			unitInstanceID = 55
+			unitID = ASF-33
+			rotation = (0, 214.0711, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Orbit
+				initialSpeed = 310
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 5000
+				fuel = 100
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				equips = af_gun;asf_mrmx6;asf_srmx2Left;asf_srmx2Left;asf_droptank;asf_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fire Ctrl Radar P
+			globalPosition = (23691.796875, 69.927734375, 47549.75390625)
+			unitInstanceID = 56
+			unitID = PatRadarTrailer
+			rotation = (0, 122.0563, 0)
+			spawnFlags = 
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAM Launcher P
+			globalPosition = (23280.078125, 0, 47572.3671875)
+			unitInstanceID = 57
+			unitID = PatriotLauncher
+			rotation = (-1.0155E-05, 88.54092, 3.674864E-06)
+			spawnFlags = 
+			UnitFields
+			{
+				radarUnits = 51;52;53;56;
+				allowReload = True
+				reloadTime = 120
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 0
+			name = Enemy unit path
+			loop = False
+			points = (33903.296875, 21.119140625, 33244.79296875);(33933.1328125, 20.392578125, 33332.0078125);(33957.76953125, 19.82421875, 33449.875);(34119.99609375, 19.82421875, 34309.7734375);(34199.6328125, 27.23828125, 34682.35546875);(34315.8515625, 45.392578125, 35078.90625);(34496.5234375, 45.392578125, 35474.6015625);(34671.76171875, 52.59765625, 35710.38671875);(34877.875, 52.59765625, 35889.1640625);(35116, 52.59765625, 36030.5703125);(35354.19140625, 52.59765625, 36124.05859375);(35598.4609375, 20.830078125, 36178.75);(35824.97265625, 12.89453125, 36177.359375);(36101.0234375, 11.44140625, 36146.65625);(36340.58203125, 31.0234375, 36086.0859375);(37300.26953125, 43.203125, 35745.6640625);(37823.56640625, 46.244140625, 35549.6171875);(38166.5234375, 48.16015625, 35401.6015625);(38489.90234375, 42.64453125, 35221.37109375);(38624.28515625, 27.35546875, 35109.625);(38765.3046875, 17.525390625, 34940.87890625);(38884.296875, 21.5625, 34758.0625);(38982.18359375, 24.4609375, 34567.40625);(39042.53125, 25.578125, 34403.578125);(39099.58984375, 29.98046875, 34144.14453125);(39112.046875, 26.751953125, 33905.953125);(39103.828125, 23.1640625, 33584.62890625);(39031.28515625, 12.62890625, 32751.138671875);(39000.07421875, 1.0859375, 32292.91796875);(39003.53515625, 0, 29846.6171875);
+		}
+		PATH
+		{
+			id = 2
+			name = Drone Patrol Path
+			loop = True
+			points = (17998.625, 2944.12109375, 31020.921875);(20642.2890625, 2944.12109375, 28233.580078125);(23723.85546875, 2944.12109375, 26312.25390625);(28617.59765625, 2944.12109375, 24591.392578125);(31224.4609375, 2944.12109375, 26986.83984375);(30007.234375, 2944.12109375, 33021.26171875);(22388.890625, 2944.12109375, 35527.48828125);
+		}
+		PATH
+		{
+			id = 3
+			name = TankerPath
+			loop = True
+			points = (41360.2890625, 3910.578125, 58174.19140625);(47085.6953125, 3910.578125, 53579.5078125);(76478.640625, 3844.234375, 31481.9296875);(85962.59375, 3843.9013671875, 30586);(86000.2109375, 3843.9013671875, 38145.6640625);(52446.6328125, 3910.578125, 63219.2421875);
+		}
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = Pickup Waypoint
+			globalPoint = (38596.048004150391, -4.57763671875E-05, 29725.933990478516)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = Drop-off waypoint
+			globalPoint = (23319.481750488281, 0, 47683.043609619141)
+		}
+		WAYPOINT
+		{
+			id = 2
+			name = Dropoff rallypt
+			globalPoint = (23427.416351318359, 0, 47701.349945068359)
+		}
+		WAYPOINT
+		{
+			id = 3
+			name = EnemyGroundUnitObjectiveWpt
+			globalPoint = (37798.475982666016, 46.206146240234375, 35560.622772216797)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = RTB Wpt
+			globalPoint = (68784.07152557373, 10.203819274902344, 23688.720336914063)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = Clear LZ wpt
+			globalPoint = (24972.845947265625, 0, 46696.46875)
+		}
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Xray = 2;10;11;12;13;14;9;
+		}
+		ENEMY
+		{
+			Alpha = 2;36;37;38;55;
+			Bravo = 2;39;40;41;42;
+		}
+	}
+	TimedEventGroups
+	{
+		TimedEventGroup
+		{
+			groupName = Take off events
+			groupID = 0
+			beginImmediately = True
+			initialDelay = 0
+			TimedEventInfo
+			{
+				eventName = Take-off fighters
+				time = 0
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 12
+					eventName = Take Off
+					methodName = TakeOff
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 13
+					eventName = Take Off
+					methodName = TakeOff
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 14
+					eventName = Take Off
+					methodName = TakeOff
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = VTOL1 takeoff
+				time = 10
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 10
+					eventName = Take Off
+					methodName = TakeOff
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = VTOL2 takeoff
+				time = 15
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 11
+					eventName = Take Off
+					methodName = TakeOff
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = Form up
+				time = 60
+				EventTarget
+				{
+					targetType = UnitGroup
+					targetID = 123
+					eventName = Form On Pilot
+					methodName = FormOnPilot
+					ParamInfo
+					{
+						type = UnitReference
+						value = 9
+						name = Target Leader
+						ParamAttrInfo
+						{
+							type = PilotUnitFilter
+							data = null
+						}
+						ParamAttrInfo
+						{
+							type = TeamOptions
+							data = SameTeam
+						}
+					}
+				}
+			}
+		}
+		TimedEventGroup
+		{
+			groupName = Delayed SAM Build
+			groupID = 2
+			beginImmediately = False
+			initialDelay = 0
+			TimedEventInfo
+			{
+				eventName = Build SAM
+				time = 10
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 51
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 52
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 53
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 54
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 56
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 57
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+			}
+		}
+		TimedEventGroup
+		{
+			groupName = Radio Intro
+			groupID = 3
+			beginImmediately = True
+			initialDelay = 5
+			TimedEventInfo
+			{
+				eventName = CommRadio
+				time = 0
+				EventTarget
+				{
+					targetType = System
+					targetID = 0
+					eventName = Radio Message
+					methodName = RadioMessage
+					ParamInfo
+					{
+						type = VTSAudioReference
+						value = Example\radioMessages\e1_intro.ogg
+						name = Audio
+					}
+				}
+			}
+		}
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = Pick-up
+			objectiveInfo = Pick up the soldiers at the waypoint.
+			objectiveID = 0
+			required = True
+			completionReward = 0
+			waypoint = 0
+			autoSetWaypoint = False
+			startMode = PreReqs
+			objectiveType = Pick_Up
+			preReqObjectives = 2;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Radio Message
+						methodName = RadioMessage
+						ParamInfo
+						{
+							type = VTSAudioReference
+							value = Example\radioMessages\e1_deliverToCity.ogg
+							name = Audio
+						}
+					}
+				}
+			}
+			fields
+			{
+				targets = 1;0;2;3;4;5;
+				minRequired = 1
+				perUnitReward = 0
+				fullCompleteBonus = 0
+			}
+		}
+		Objective
+		{
+			objectiveName = Drop Off
+			objectiveInfo = Transport the soldiers to the objective waypoint.
+			objectiveID = 1
+			required = True
+			completionReward = 0
+			waypoint = 1
+			autoSetWaypoint = True
+			startMode = PreReqs
+			objectiveType = Drop_Off
+			preReqObjectives = 4;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Timed_Events
+						targetID = 2
+						eventName = Begin
+						methodName = Begin
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 200
+						eventName = Spawn All
+						methodName = SpawnAll
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 200
+						eventName = Fly Orbit
+						methodName = FlyOrbit
+						ParamInfo
+						{
+							type = Waypoint
+							value = 0
+							name = Waypoint
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 4000
+							name = Radius
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1000,25000)
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 4000
+							name = Altitude
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1500,8000)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Radio Message
+						methodName = RadioMessage
+						ParamInfo
+						{
+							type = VTSAudioReference
+							value = Example\radioMessages\e1_deployTroops.ogg
+							name = Audio
+						}
+					}
+				}
+			}
+			fields
+			{
+				targets = 0;1;2;3;4;5;
+				minRequired = 1
+				perUnitReward = 0
+				fullCompleteBonus = 0
+				unloadRadius = 300
+				dropoffRallyPt = 2
+			}
+		}
+		Objective
+		{
+			objectiveName = CAS
+			objectiveInfo = Destroy the enemy units on the road towards our soldiers.
+			objectiveID = 2
+			required = True
+			completionReward = 0
+			waypoint = 3
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Destroy
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Radio Message
+						methodName = RadioMessage
+						ParamInfo
+						{
+							type = VTSAudioReference
+							value = Example\radioMessages\e1_armorDestroyed.ogg
+							name = Audio
+						}
+					}
+				}
+			}
+			fields
+			{
+				targets = 32;33;34;35;
+				minRequired = 4
+				perUnitReward = 0
+				fullCompleteBonus = 0
+			}
+		}
+		Objective
+		{
+			objectiveName = RTB
+			objectiveInfo = Return to the carrier.
+			objectiveID = 3
+			required = True
+			completionReward = 0
+			waypoint = 4
+			autoSetWaypoint = False
+			startMode = Final
+			objectiveType = Land
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				radius = 1000
+			}
+		}
+		Objective
+		{
+			objectiveName = Clear LZ
+			objectiveInfo = Destroy the units in the city by the landing zone.
+			objectiveID = 4
+			required = True
+			completionReward = 0
+			waypoint = 5
+			autoSetWaypoint = False
+			startMode = PreReqs
+			objectiveType = Destroy
+			preReqObjectives = 0;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				targets = 45;46;47;48;49;
+				minRequired = 5
+				perUnitReward = 0
+				fullCompleteBonus = 0
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = The enemy has completely taken over the island.  Most of our forces have retreated to the ocean, but a small group of engineers remain.
+			imagePath = Example\ucavOverIsland.jpg
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = You must destroy the enemy armor group advancing on the engineer unit.  When the way is clear, pick up the soldiers and transport them to the waypoint in the north-western city.
+			imagePath = Example\enemyArmor.jpg
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = The enemy have set up air defenses all over the island, including where you need to transport the soldiers.  Make sure you clear them out before attempting to land.
+			imagePath = Example\eAirDefense.jpg
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = Once deployed, the engineers will set up a missile defense system.  This will help cover your return to the carrier.
+			imagePath = Example\engineers.jpg
+			audioClipPath = 
+		}
+	}
+	ResourceManifest
+	{
+		0 = Example\radioMessages\e1_intro.ogg
+		1 = Example\radioMessages\e1_deliverToCity.ogg
+		2 = Example\radioMessages\e1_deployTroops.ogg
+		3 = Example\radioMessages\e1_armorDestroyed.ogg
+		4 = Example\ucavOverIsland.jpg
+		5 = Example\enemyArmor.jpg
+		6 = Example\eAirDefense.jpg
+		7 = Example\engineers.jpg
+	}
+}
+
