@@ -1,6 +1,6 @@
 CAMPAIGN
 {
-	campaignID = AV-42C.Honolulu.7L
+	campaignID = AV42CHonolulu7L
 	campaignName = Honolulu
 	description = Terrorist Attack In Western Honolulu... They Are Headed To Eastern Oahu... We Are Under DEFCON 2...
 	vehicle = AV-42C

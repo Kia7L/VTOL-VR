@@ -1,10 +1,10 @@
 CustomScenario
 {
 	gameVersion = 0.0.14f1
-	campaignID = AV-42C.Honolulu.7L
+	campaignID = AV42CHonolulu7L
 	campaignOrderIdx = 0
 	scenarioName = UnderSiege
-	scenarioID = UnderSiege.Honolulu.Iran
+	scenarioID = UnderSiegeHonoluluIran
 	scenarioDescription = Iran Are On The Western North Shore Coast... You Know The Rest...!!!
 	mapID = Honolulu.7L
 	vehicle = AV-42C
