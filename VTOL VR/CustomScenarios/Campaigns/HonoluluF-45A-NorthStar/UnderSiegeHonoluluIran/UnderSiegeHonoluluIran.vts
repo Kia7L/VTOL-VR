@@ -25,7 +25,7 @@ CustomScenario
 	FrameRateMin=90
 	FrameRateMax=108
 	FrameRateLimit=200
-	Units
+	UNITS
 	{
 		UnitSpawner
 		{
