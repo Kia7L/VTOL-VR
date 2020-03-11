@@ -19,8 +19,12 @@ CustomScenario
 	refuelWptID = wpt:2
 	envName = morning
 	selectableEnv = True
-	qsMode = Anywhere
-	qsLimit = -1
+	qsMode = Center
+	qsLimit = 2
+	FrameRateMode=(4*3*2*1*0 1110)
+	FrameRateMin=90
+	FrameRateMax=108
+	FrameRateLimit=200
 	UNITS
 	{
 		UnitSpawner

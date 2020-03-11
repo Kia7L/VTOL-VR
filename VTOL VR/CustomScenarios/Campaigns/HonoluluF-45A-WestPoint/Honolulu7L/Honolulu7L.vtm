@@ -1,13 +1,17 @@
 VTMapCustom
 {
 	mapID = Honolulu7L
-	mapName = Hawaiian Islands Oahu
-	mapDescription = Paradise In Ruin...
+	mapName = 
+	mapDescription = 
 	mapType = HeightMap
 	edgeMode = Water
 	biome = Boreal
 	seed = seed
 	mapSize = 52
+	FrameRateMode=(4*3*2*1*0 1110)
+	FrameRateMin=90
+	FrameRateMax=108
+	FrameRateLimit=200
 	TerrainSettings
 	{
 	}
