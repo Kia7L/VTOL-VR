@@ -1,7 +1,6 @@
 CustomScenario
 {
-	gameVersion = 0.0.14f1
-	campaignID = Honolulu_F-45A-7L-
+	campaignID = Honolulu_F-45A-7L
 	campaignOrderIdx = 1
 	scenarioName = TopGun_NorthStar
 	scenarioID = OahuNorthStar7L
