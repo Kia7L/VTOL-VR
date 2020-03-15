@@ -5,9 +5,9 @@ VTMapCustom
 	mapDescription = Oahu Hawaii 7L...
 	mapType = HeightMap
 	edgeMode = Water
-	biome = SunSet
-	seed = seed
-	mapSize = 52
+	biome = Sky
+	seed = Bush
+	mapSize = 51
 	mapHeight = 11
 	TerrainSettings
 	{
