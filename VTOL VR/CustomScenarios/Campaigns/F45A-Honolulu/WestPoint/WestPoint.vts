@@ -2,24 +2,24 @@ CustomScenario
 {
 	gameVersion = 0.0.14f1
 	campaignID = F45A-Honolulu
-	campaignOrderIdx = 0
+	campaignOrderIdx = 1
 	scenarioName = WestPoint
 	scenarioID = WestPoint
 	scenarioDescription = Iran are On Boats Headed Western Oahu From The North... Destroy All Enemys...
 	mapID = Honolulu
 	vehicle = F-45A
-	startingEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;f45-agm145I;f45-agm145x3;f45-gbu53;
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
-	baseBudget = 100000000
+	baseBudget = 1E+07
 	isTraining = False
 	rtbWptID = wpt:2
 	refuelWptID = wpt:2
-	envName = day
-	selectableEnv = False
-	qsMode = Center
-	qsLimit = 2
+	envName = Day
+	selectableEnv = True
+	qsMode = Anywhere
+	qsLimit = 0
 	UNITS
 	{
 		UnitSpawner
@@ -30,6 +30,7 @@ CustomScenario
 			unitID = AlliedCarrier
 			rotation = (0, 157.0913, 0)
 			spawnChance = 100
+			lastValidPlacement = (13648.76025390625, -5, 69756.806640625)
 			spawnFlags = 
 			UnitFields
 			{
@@ -52,6 +53,7 @@ CustomScenario
 			unitID = PlayerSpawn
 			rotation = (0, 98.44129, 0)
 			spawnChance = 100
+			lastValidPlacement = (13614.41015625, 18.98046875, 69765.056640625)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -68,6 +70,7 @@ CustomScenario
 			unitID = AV-42CAI
 			rotation = (6.299549E-06, 211.077, -3.143708E-06)
 			spawnChance = 100
+			lastValidPlacement = (13641.43359375, 18.98046875, 69865.85546875)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -97,6 +100,7 @@ CustomScenario
 			unitID = F-45A AI
 			rotation = (6.600373E-06, 217.2337, -2.44996E-06)
 			spawnChance = 100
+			lastValidPlacement = (13605.1171875, 18.98046875, 69903.443359375)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -127,6 +131,7 @@ CustomScenario
 			unitID = FA-26B AI
 			rotation = (6.335029E-06, 211.7312, -3.071583E-06)
 			spawnChance = 100
+			lastValidPlacement = (13625.6015625, 18.98046875, 69884.177734375)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -157,6 +162,7 @@ CustomScenario
 			unitID = AV-42CAI
 			rotation = (-5.592669E-06, 95.00227, -4.276595E-06)
 			spawnChance = 100
+			lastValidPlacement = (13584.677734375, 18.98046875, 69848.40625)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -186,6 +192,7 @@ CustomScenario
 			unitID = F-45A AI
 			rotation = (0, 98.44129, 0)
 			spawnChance = 100
+			lastValidPlacement = (13603.794921875, 18.98046875, 69797.1875)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -214,8 +221,9 @@ CustomScenario
 			globalPosition = (13573.291015625, 18.98046875, 69872.451171875)
 			unitInstanceID = 9
 			unitID = FA-26B AI
-			rotation = (-6.011082E-06, 88.97066, -3.665257E-06)
+			rotation = (-6.011082E-06, 88.97066, -3.665258E-06)
 			spawnChance = 100
+			lastValidPlacement = (13573.291015625, 18.98046875, 69872.451171875)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -246,48 +254,7 @@ CustomScenario
 			unitID = DroneGunBoat
 			rotation = (0, 214.2891, 0)
 			spawnChance = 100
-			spawnFlags = 
-			UnitFields
-			{
-				unitGroup = null
-				defaultBehavior = Navigate_Path
-				defaultWaypoint = null
-				defaultPath = 1
-				engageEnemies = True
-				detectionMode = Default
-				spawnOnStart = True
-				invincible = False
-			}
-		}
-		UnitSpawner
-		{
-			unitName = Rocket Boat
-			globalPosition = (52343.81103515625, -5, 152331.7958984375)
-			unitInstanceID = 11
-			unitID = DroneGunBoatRocket
-			rotation = (0, 214.2891, 0)
-			spawnChance = 100
-			spawnFlags = 
-			UnitFields
-			{
-				unitGroup = null
-				defaultBehavior = Navigate_Path
-				defaultWaypoint = null
-				defaultPath = 1
-				engageEnemies = True
-				detectionMode = Force_Detected
-				spawnOnStart = True
-				invincible = False
-			}
-		}
-		UnitSpawner
-		{
-			unitName = Gun Boat
-			globalPosition = (49900.978515625, -5, 153621.69677734375)
-			unitInstanceID = 12
-			unitID = DroneGunBoat
-			rotation = (0, 214.2891, 0)
-			spawnChance = 100
+			lastValidPlacement = (51776.298095703125, -5, 154179.91821289063)
 			spawnFlags = 
 			UnitFields
 			{
@@ -309,6 +276,7 @@ CustomScenario
 			unitID = DroneCarrier
 			rotation = (0, 221.3157, 0)
 			spawnChance = 100
+			lastValidPlacement = (53808.4775390625, -5, 154893.25952148438)
 			spawnFlags = 
 			UnitFields
 			{
@@ -324,33 +292,13 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = Gun Boat
-			globalPosition = (50414.6640625, -5, 152024.23193359375)
-			unitInstanceID = 14
-			unitID = DroneGunBoat
-			rotation = (0, 214.2891, 0)
-			spawnChance = 100
-			spawnFlags = 
-			UnitFields
-			{
-				unitGroup = null
-				defaultBehavior = Navigate_Path
-				defaultWaypoint = null
-				defaultPath = 1
-				engageEnemies = True
-				detectionMode = Default
-				spawnOnStart = True
-				invincible = False
-			}
-		}
-		UnitSpawner
-		{
 			unitName = Rocket Boat
 			globalPosition = (52472.86181640625, -5, 157353.03442382813)
 			unitInstanceID = 15
 			unitID = DroneGunBoatRocket
 			rotation = (0, 221.3157, 0)
 			spawnChance = 100
+			lastValidPlacement = (52472.86181640625, -5, 157353.03442382813)
 			spawnFlags = 
 			UnitFields
 			{
@@ -372,6 +320,7 @@ CustomScenario
 			unitID = DroneGunBoat
 			rotation = (0, 221.3157, 0)
 			spawnChance = 100
+			lastValidPlacement = (55098.666748046875, -5, 157786.24291992188)
 			spawnFlags = 
 			UnitFields
 			{
@@ -393,6 +342,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.9971, 0)
 			spawnChance = 100
+			lastValidPlacement = (5669.878173828125, -5, 85943.8984375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -414,6 +364,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.9971, 0)
 			spawnChance = 100
+			lastValidPlacement = (5517.3704223632813, -5, 85566.95458984375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -435,6 +386,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 335.9754, 0)
 			spawnChance = 100
+			lastValidPlacement = (6049.6565551757813, -5, 85656.836761474609)
 			spawnFlags = 
 			UnitFields
 			{
@@ -464,7 +416,7 @@ CustomScenario
 			id = 1
 			name = WestPoint
 			loop = False
-			points = (50092.359375, -5, 151463.796875);(34616.3515625, -5, 132208.154296875);(2653.89453125, -5, 111277.341796875);(-3147.02734375, -5, 100548.03125);
+			points = (50092.359375, -5, 151463.796875);(34616.3515625, -5, 132208.15625);(2653.89453125, -5, 111277.34375);(-3147.02734375, -5, 100548.03125);
 			pathMode = Smooth
 		}
 	}
@@ -527,6 +479,7 @@ CustomScenario
 			objectiveName = Villans
 			objectiveInfo = Destroy Eniemy North Coast... Their Out There...Times x 7...
 			objectiveID = 0
+			orderID = 0
 			required = True
 			completionReward = 0
 			waypoint = 5
@@ -581,6 +534,7 @@ CustomScenario
 			objectiveName = Return
 			objectiveInfo = Try To Return Back To Home Base or Ditch It...
 			objectiveID = 1
+			orderID = 1
 			required = True
 			completionReward = 0
 			waypoint = unit:1
@@ -648,8 +602,32 @@ CustomScenario
 	Conditionals
 	{
 	}
+	ConditionalActions
+	{
+	}
+	EventSequences
+	{
+	}
 	BASES
 	{
+		BaseInfo
+		{
+			id = 0
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+		}
 	}
 	Briefing
 	{

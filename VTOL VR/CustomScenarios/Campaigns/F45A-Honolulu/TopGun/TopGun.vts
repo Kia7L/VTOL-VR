@@ -5,7 +5,7 @@ CustomScenario
 	campaignOrderIdx = 0
 	scenarioName = TopGun
 	scenarioID = TopGun
-	scenarioDescription = 2x-Jets... Medium Difficulty... HaveFun...
+	scenarioDescription = 2x-Jets... Medium Difficulty From Rear... Verry Hard From The Front... HaveFun...
 	mapID = Honolulu
 	vehicle = F-45A
 	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
@@ -16,20 +16,21 @@ CustomScenario
 	isTraining = False
 	rtbWptID = unit:1
 	refuelWptID = wpt:2
-	envName = day
+	envName = Morning
 	selectableEnv = False
-	qsMode = Center
-	qsLimit = 2
+	qsMode = Anywhere
+	qsLimit = 0
 	UNITS
 	{
 		UnitSpawner
 		{
 			unitName = ASF-30
-			globalPosition = (31406.197265625, 2600.3515625, 134551.083984375)
+			globalPosition = (36599.9296875, 7331.291015625, 146328.99609375)
 			unitInstanceID = 0
 			unitID = ASF-30
-			rotation = (0, 127.6527, 0)
+			rotation = (0, 169.9539, 0)
 			spawnChance = 100
+			lastValidPlacement = (36599.9296875, 7331.291015625, 146328.99609375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -60,6 +61,7 @@ CustomScenario
 			unitID = AlliedCarrier
 			rotation = (0, 160.7971, 0)
 			spawnChance = 100
+			lastValidPlacement = (13626.645568847656, -5, 69759.36962890625)
 			spawnFlags = 
 			UnitFields
 			{
@@ -82,6 +84,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 322.0397, 0)
 			spawnChance = 100
+			lastValidPlacement = (11955.259765625, -5, 71486.69482421875)
 			spawnFlags = 
 			UnitFields
 			{
@@ -103,6 +106,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.5657, 0)
 			spawnChance = 100
+			lastValidPlacement = (10220.33447265625, -5, 69223.97265625)
 			spawnFlags = 
 			UnitFields
 			{
@@ -124,6 +128,7 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.5657, 0)
 			spawnChance = 100
+			lastValidPlacement = (12189.583862304688, -5, 73904.927734375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -140,11 +145,12 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = ASF-58
-			globalPosition = (32652.4580078125, 1677.2421875, 136351.939453125)
+			globalPosition = (35109.94775390625, 7331.291015625, 146376.48828125)
 			unitInstanceID = 5
 			unitID = ASF-58
-			rotation = (0, 343.4704, 0)
+			rotation = (0, 169.9539, 0)
 			spawnChance = 100
+			lastValidPlacement = (35109.94775390625, 7331.291015625, 146376.48828125)
 			spawnFlags = 
 			UnitFields
 			{
@@ -175,6 +181,7 @@ CustomScenario
 			unitID = PlayerSpawn
 			rotation = (0, 102.1471, 0)
 			spawnChance = 100
+			lastValidPlacement = (13592.89990234375, 18.97998046875, 69769.82177734375)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -191,6 +198,7 @@ CustomScenario
 			unitID = F-45A AI
 			rotation = (6.29955E-06, 214.7829, -3.143708E-06)
 			spawnChance = 100
+			lastValidPlacement = (13626.38232421875, 18.97998046875, 69868.664306640625)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -222,6 +230,7 @@ CustomScenario
 			unitID = FA-26B AI
 			rotation = (0, 102.1471, 0)
 			spawnChance = 100
+			lastValidPlacement = (13584.3837890625, 18.97998046875, 69802.572998046875)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -260,7 +269,7 @@ CustomScenario
 			id = 1
 			name = EnemyFire
 			loop = True
-			points = (43088.984375, 860.802734375, 100014.53125);(44755.125, 747.56640625, 97565.3984375);(42778.140625, 3584.423828125, 90973.953125);(36000.2109375, 5132.6708984375, 86022.46875);(30157.419921875, 3694.6259765625, 85611.703125);(23315.37109375, 3492.990234375, 86712.5859375);(17416.41796875, 1163.2890625, 91373.609375);(10194.1484375, 1971.19140625, 101006.3125);(11339.78515625, 1971.19140625, 107417.28125);(23436.9765625, 659.46484375, 105313.6875);
+			points = (43757.78515625, 707.5166015625, 95559.984375);(46151.015625, 1231.8046875, 93314.009765625);(37591.078125, 5316.32470703125, 85008.5703125);(30157.419921875, 3694.6259765625, 85611.703125);(22882.439453125, 3311.51611328125, 85031.626953125);(16701.44140625, 1163.2890625, 89523.998046875);(8338.96484375, 922.61572265625, 101931.56762695313);(14471.08984375, 922.615234375, 105783.763671875);(23436.9765625, 659.46484375, 105313.6875);(39905.71875, 707.5166015625, 99508.55615234375);
 			pathMode = Smooth
 		}
 	}
@@ -294,7 +303,7 @@ CustomScenario
 		{
 			id = 4
 			name = Peak
-			globalPoint = (35404.6923828125, 7402.53955078125, 88318.8291015625)
+			globalPoint = (34781.51220703125, 7331.291015625, 87341.83203125)
 		}
 		WAYPOINT
 		{
@@ -356,6 +365,7 @@ CustomScenario
 			objectiveName = Villans
 			objectiveInfo = Destroy Eniemy WayPoint Set... Their Out There... x2...
 			objectiveID = 0
+			orderID = 0
 			required = True
 			completionReward = 0
 			waypoint = 4
@@ -417,6 +427,7 @@ CustomScenario
 			objectiveName = Return
 			objectiveInfo = Try To Return Back To Home Base or Ditch It...
 			objectiveID = 1
+			orderID = 1
 			required = True
 			completionReward = 0
 			waypoint = null
@@ -484,8 +495,32 @@ CustomScenario
 	Conditionals
 	{
 	}
+	ConditionalActions
+	{
+	}
+	EventSequences
+	{
+	}
 	BASES
 	{
+		BaseInfo
+		{
+			id = 0
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+		}
 	}
 	Briefing
 	{
