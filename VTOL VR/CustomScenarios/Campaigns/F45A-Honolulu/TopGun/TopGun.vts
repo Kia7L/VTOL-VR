@@ -1,0 +1,505 @@
+CustomScenario
+{
+	gameVersion = 0.0.14f1
+	campaignID = F45A-Honolulu
+	campaignOrderIdx = 0
+	scenarioName = TopGun
+	scenarioID = TopGun
+	scenarioDescription = 2x-Jets... Medium Difficulty... HaveFun...
+	mapID = Honolulu
+	vehicle = F-45A
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	forceEquips = False
+	normForcedFuel = 8
+	equipsConfigurable = True
+	baseBudget = 1E+08
+	isTraining = False
+	rtbWptID = unit:1
+	refuelWptID = wpt:2
+	envName = day
+	selectableEnv = False
+	qsMode = Center
+	qsLimit = 2
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (31406.197265625, 2600.3515625, 134551.083984375)
+			unitInstanceID = 0
+			unitID = ASF-30
+			rotation = (0, 127.6527, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 6001.409
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = False
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = asf30_gun;asf-srmx1;asf-srmx1;asf_mrmRail;asf_mrmRail;asf_mrmDrop;asf_mrmDrop;asf_mrmRail;asf_mrmRail;asf-srmx1;asf-srmx1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Aircraft Carrier
+			globalPosition = (13626.645568847656, -5, 69759.36962890625)
+			unitInstanceID = 1
+			unitID = AlliedCarrier
+			rotation = (0, 160.7971, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				carrierSpawns = 0:-1;1:-1;2:7;3:-1;4:-1;5:6;6:-1;7:-1;8:8;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (11955.259765625, -5, 71486.69482421875)
+			unitInstanceID = 2
+			unitID = EscortCruiser
+			rotation = (0, 322.0397, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (10220.33447265625, -5, 69223.97265625)
+			unitInstanceID = 3
+			unitID = EscortCruiser
+			rotation = (0, 342.5657, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (12189.583862304688, -5, 73904.927734375)
+			unitInstanceID = 4
+			unitID = EscortCruiser
+			rotation = (0, 342.5657, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-58
+			globalPosition = (32652.4580078125, 1677.2421875, 136351.939453125)
+			unitInstanceID = 5
+			unitID = ASF-58
+			rotation = (0, 343.4704, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 5848.989
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = asf58_gun;asf58_mrmx8;asf58_mrmx8;asf58_srmx2Left;asf58_srmx2Right;asf58_droptank;asf58_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Player
+			globalPosition = (13592.89990234375, 18.97998046875, 69769.82177734375)
+			unitInstanceID = 6
+			unitID = PlayerSpawn
+			rotation = (0, 102.1471, 0)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = null
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-45A
+			globalPosition = (13626.38232421875, 18.97998046875, 69868.664306640625)
+			unitInstanceID = 7
+			unitID = F-45A AI
+			rotation = (6.29955E-06, 214.7829, -3.143708E-06)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = null
+				voiceProfile = null
+				defaultBehavior = TakeOff
+				initialSpeed = 312.4895
+				defaultNavSpeed = 453.0194
+				defaultOrbitPoint = 4
+				defaultPath = null
+				orbitAltitude = 6751.762
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = f45_gun;f45_sidewinderx2;f45_amraamInternal;f45_amraamInternal;f45_sidewinderx2;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F/A-26B
+			globalPosition = (13584.3837890625, 18.97998046875, 69802.572998046875)
+			unitInstanceID = 8
+			unitID = FA-26B AI
+			rotation = (0, 102.1471, 0)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = null
+				voiceProfile = null
+				defaultBehavior = Parked
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 7452.091
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 0
+			name = Presidential Sweet
+			loop = False
+			points = (59248.7734375, 134.587890625, 155589.171875);(79565.0234375, 134.587890625, 143332.21875);(98907.5234375, 134.587890625, 124392.6875);(138830.859375, -5, 79966.984375);(156358.328125, -5, 37420.859375);(143405.8125, -5, 22569.546875);(128363.1875, -5, 29613.046875);
+			pathMode = Smooth
+		}
+		PATH
+		{
+			id = 1
+			name = EnemyFire
+			loop = True
+			points = (43088.984375, 860.802734375, 100014.53125);(44755.125, 747.56640625, 97565.3984375);(42778.140625, 3584.423828125, 90973.953125);(36000.2109375, 5132.6708984375, 86022.46875);(30157.419921875, 3694.6259765625, 85611.703125);(23315.37109375, 3492.990234375, 86712.5859375);(17416.41796875, 1163.2890625, 91373.609375);(10194.1484375, 1971.19140625, 101006.3125);(11339.78515625, 1971.19140625, 107417.28125);(23436.9765625, 659.46484375, 105313.6875);
+			pathMode = Smooth
+		}
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = DiamondHead
+			globalPoint = (115610.17358398438, 2359.665771484375, 26052.169921875)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = LionsChair
+			globalPoint = (102522.564453125, 3706.8310546875, 99550.60595703125)
+		}
+		WAYPOINT
+		{
+			id = 2
+			name = Carrier
+			globalPoint = (13574.468536376953, 31.26116943359375, 69908.2783203125)
+		}
+		WAYPOINT
+		{
+			id = 3
+			name = OllieNorth
+			globalPoint = (41328.759765625, 3610.736328125, 108143.337890625)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = Peak
+			globalPoint = (35404.6923828125, 7402.53955078125, 88318.8291015625)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = NME Gate 00
+			globalPoint = (43160.16796875, 3706.8310546875, 111491.771484375)
+		}
+		WAYPOINT
+		{
+			id = 6
+			name = DragonsBack
+			globalPoint = (73584.71875, 3706.8310546875, 119940.8720703125)
+		}
+	}
+	UNITGROUPS
+	{
+	}
+	TimedEventGroups
+	{
+		TimedEventGroup
+		{
+			groupName = Enemy
+			groupID = 0
+			beginImmediately = True
+			initialDelay = 20
+			TimedEventInfo
+			{
+				eventName = New Timed Event 1
+				time = 60
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event 2
+				time = 80
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 0
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 5
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+			}
+		}
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = Villans
+			objectiveInfo = Destroy Eniemy WayPoint Set... Their Out There... x2...
+			objectiveID = 0
+			required = True
+			completionReward = 0
+			waypoint = 4
+			autoSetWaypoint = True
+			startMode = Immediate
+			objectiveType = Destroy
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+				}
+			}
+			fields
+			{
+				targets = 0;5;
+				minRequired = 2
+				perUnitReward = 25269.6
+				fullCompleteBonus = 50023.49
+			}
+		}
+		Objective
+		{
+			objectiveName = Return
+			objectiveInfo = Try To Return Back To Home Base or Ditch It...
+			objectiveID = 1
+			required = True
+			completionReward = 0
+			waypoint = null
+			autoSetWaypoint = True
+			startMode = Final
+			objectiveType = Fly_To
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 6
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 2
+							name = wpt
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Complete Objective
+						methodName = CompleteObjective
+					}
+				}
+			}
+			fields
+			{
+				triggerRadius = 2000
+				sphericalRadius = True
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = Terrorist On On Their Way... Make Yours The Peaks of NorthStar.. The Way Point Is Set For You.. Head Up There and Take Out Any Insurgents Or Militia Force.. They Sould Be On Jet Planes... The Difficulty Is x2 War Jets... YouShould Rocket Up...///nDont Rely On Way Point.. 60 milePer.
+			imagePath = 7L\V2.jpg
+			audioClipPath = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+		}
+	}
+	ResourceManifest
+	{
+		0 = 7L\V2.jpg
+		1 = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+	}
+}
+
