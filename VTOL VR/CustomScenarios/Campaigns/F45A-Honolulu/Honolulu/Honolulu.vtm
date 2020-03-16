@@ -4,7 +4,7 @@ VTMapCustom
 	mapName = Honolulu
 	mapDescription = Oahu Hawaii 7L...
 	mapType = HeightMap
-	edgeMode = Water
+	edgeMode = Ocean
 	biome = Sky
 	seed = Bush
 	mapSize = 51

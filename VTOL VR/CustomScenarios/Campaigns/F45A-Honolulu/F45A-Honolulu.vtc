@@ -2,8 +2,9 @@ CAMPAIGN
 {
 	campaignID = F45A-Honolulu
 	campaignName = F45A-Honolulu-Campaign
-	description = Oahu Honolulu Hawaii... Vs. Iran... R U REDDY...
+	{description} = {   Oahu Honolulu Hawaii...///n		   Vs.///n		  Iran...///n	   R U REDDY...///n      OFFICIAL 7L...///n        ///n- - - - =TOPGUN= - - - - - }
 	vehicle = F-45A
 	startingEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	availability = Sequential
 }
 

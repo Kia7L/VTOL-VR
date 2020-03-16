@@ -2,7 +2,7 @@ CustomScenario
 {
 	gameVersion = 0.0.14f1
 	campaignID = AV42C-Honolulu
-	campaignOrderIdx = 2
+	campaignOrderIdx = 3
 	scenarioName = NorthPoint
 	scenarioID = NorthPoint
 	scenarioDescription = Take Off.. Head North Look for Boats...
@@ -12,7 +12,7 @@ CustomScenario
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
-	baseBudget = 100000000
+	baseBudget = 900000
 	isTraining = False
 	rtbWptID = wpt:2
 	refuelWptID = wpt:2

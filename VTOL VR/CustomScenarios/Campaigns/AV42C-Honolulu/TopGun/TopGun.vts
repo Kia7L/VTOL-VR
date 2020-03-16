@@ -2,7 +2,7 @@ CustomScenario
 {
 	gameVersion = 0.0.14f1
 	campaignID = AV42C-Honolulu
-	campaignOrderIdx = 0
+	campaignOrderIdx = 1
 	scenarioName = TopGun
 	scenarioID = TopGun
 	scenarioDescription = 2x-Jets... Medium Difficulty... HaveFun...
@@ -12,7 +12,7 @@ CustomScenario
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
-	baseBudget = 1E+08
+	baseBudget = 900000
 	isTraining = False
 	rtbWptID = unit:1
 	refuelWptID = wpt:2

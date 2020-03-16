@@ -1,0 +1,524 @@
+CustomScenario
+{
+	gameVersion = 0.0.14f1
+	campaignID = FA-26B-Honolulu
+	campaignOrderIdx = 1
+	scenarioName = TopGun
+	scenarioID = TopGun
+	scenarioDescription = 2x-Jets... Medium Difficulty From Rear... Verry Hard From The Front... HaveFun...
+	mapID = Honolulu
+	vehicle = F/A-26B
+	allowedEquips = fa26_droptank;fa26_droptankXL;fa26-cft;fa26_gun;af_amraam;af_amraamRail;af_aim9;fa26_aim9x2;fa26_aim9x3;fa26_iris-t-x1;fa26_iris-t-x2;fa26_iris-t-x3;af_mk82;fa26_mk82x2;fa26_mk82x3;fa26_mk82HDx1;fa26_mk82HDx2;fa26_mk82HDx3;fa26_mk83x1;fa26_cbu97x1;h70-x7ld;h70-x7ld-under;h70-x14ld;h70-x14ld-under;fa26_cagm-6;fa26_gbu38x1;fa26_gbu38x2;fa26_gbu38x3;fa26_gbu39x4uFront;fa26_gbu39x4uRear;fa26_maverickx1;fa26_maverickx3;fa26_agm89x1;fa26_tgp;fa26_harmx1;fa26_harmx1dpMount;fa26_sidearmx1;fa26_sidearmx2;fa26_sidearmx3;af_amraamRailx2;fa26_gbu12x1;fa26_gbu12x2;fa26_gbu12x3;fa26_agm161;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 900000
+	isTraining = False
+	rtbWptID = unit:1
+	refuelWptID = wpt:2
+	envName = morning
+	selectableEnv = True
+	qsMode = Anywhere
+	qsLimit = -1
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (36599.9296875, 7331.291015625, 146328.99609375)
+			unitInstanceID = 0
+			unitID = ASF-30
+			rotation = (0, 169.9539, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 6001.409
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = False
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = asf30_gun;asf-srmx1;asf-srmx1;asf_mrmRail;asf_mrmRail;asf_mrmDrop;asf_mrmDrop;asf_mrmRail;asf_mrmRail;asf-srmx1;asf-srmx1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Aircraft Carrier
+			globalPosition = (13625.958053588867, -5, 69772.144989013672)
+			unitInstanceID = 1
+			unitID = AlliedCarrier
+			rotation = (0, 337.8578, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				carrierSpawns = 0:-1;1:-1;2:7;3:-1;4:-1;5:6;6:-1;7:-1;8:8;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (11955.259765625, -5, 71486.69482421875)
+			unitInstanceID = 2
+			unitID = EscortCruiser
+			rotation = (0, 322.0397, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (10220.33447265625, -5, 69223.97265625)
+			unitInstanceID = 3
+			unitID = EscortCruiser
+			rotation = (0, 342.5657, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (12189.583862304688, -5, 73904.927734375)
+			unitInstanceID = 4
+			unitID = EscortCruiser
+			rotation = (0, 342.5657, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-58
+			globalPosition = (35109.94775390625, 7331.291015625, 146376.48828125)
+			unitInstanceID = 5
+			unitID = ASF-58
+			rotation = (0, 169.9539, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Orbit
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 5848.989
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = asf58_gun;asf58_mrmx8;asf58_mrmx8;asf58_srmx2Left;asf58_srmx2Right;asf58_droptank;asf58_droptank;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Player
+			globalPosition = (13660.195114135742, 18.979995727539063, 69763.436950683594)
+			unitInstanceID = 6
+			unitID = PlayerSpawn
+			rotation = (0, 279.2078, 0)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = null
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-45A
+			globalPosition = (13631.82536315918, 18.979995727539063, 69663.007659912109)
+			unitInstanceID = 7
+			unitID = F-45A AI
+			rotation = (6.299548E-06, 31.84352, -3.143708E-06)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = null
+				voiceProfile = null
+				defaultBehavior = TakeOff
+				initialSpeed = 312.4895
+				defaultNavSpeed = 453.0194
+				defaultOrbitPoint = 4
+				defaultPath = null
+				orbitAltitude = 6751.762
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = f45_gun;f45_sidewinderx2;f45_amraamInternal;f45_amraamInternal;f45_sidewinderx2;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;f45_amraamRail;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F/A-26B
+			globalPosition = (13670.379516601563, 18.979995727539063, 69731.165557861328)
+			unitInstanceID = 8
+			unitID = FA-26B AI
+			rotation = (0, 279.2078, 0)
+			spawnChance = 100
+			spawnFlags = carrier;
+			UnitFields
+			{
+				unitGroup = null
+				voiceProfile = null
+				defaultBehavior = Parked
+				initialSpeed = 280
+				defaultNavSpeed = 280
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 7452.091
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 0
+			name = Presidential Sweet
+			loop = False
+			points = (59248.7734375, 134.587890625, 155589.171875);(79565.0234375, 134.587890625, 143332.21875);(98907.5234375, 134.587890625, 124392.6875);(138830.859375, -5, 79966.984375);(156358.328125, -5, 37420.859375);(143405.8125, -5, 22569.546875);(128363.1875, -5, 29613.046875);
+			pathMode = Smooth
+		}
+		PATH
+		{
+			id = 1
+			name = EnemyFire
+			loop = True
+			points = (43757.78125, 707.515625, 95559.984375);(46151.01171875, 1231.8037109375, 93314.0078125);(37591.07421875, 5316.32373046875, 85008.5703125);(30157.4140625, 3694.625, 85611.703125);(22882.4375, 3311.51513671875, 85031.625);(16701.4375, 1163.2880859375, 89524);(8338.9609375, 922.61474609375, 101931.5703125);(14471.0859375, 922.6142578125, 105783.765625);(23436.97265625, 659.4638671875, 105313.6875);(39905.71484375, 707.515625, 99508.5546875);
+			pathMode = Smooth
+		}
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = DiamondHead
+			globalPoint = (115610.17358398438, 2359.665771484375, 26052.169921875)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = LionsChair
+			globalPoint = (102522.564453125, 3706.8310546875, 99550.60595703125)
+		}
+		WAYPOINT
+		{
+			id = 2
+			name = Carrier
+			globalPoint = (13574.468536376953, 31.26116943359375, 69908.2783203125)
+		}
+		WAYPOINT
+		{
+			id = 3
+			name = OllieNorth
+			globalPoint = (41328.759765625, 3610.736328125, 108143.337890625)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = Peak
+			globalPoint = (34781.51220703125, 7331.291015625, 87341.83203125)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = NME Gate 00
+			globalPoint = (43160.16796875, 3706.8310546875, 111491.771484375)
+		}
+		WAYPOINT
+		{
+			id = 6
+			name = DragonsBack
+			globalPoint = (73584.71875, 3706.8310546875, 119940.8720703125)
+		}
+	}
+	UNITGROUPS
+	{
+	}
+	TimedEventGroups
+	{
+		TimedEventGroup
+		{
+			groupName = Enemy
+			groupID = 0
+			beginImmediately = True
+			initialDelay = 20
+			TimedEventInfo
+			{
+				eventName = New Timed Event 1
+				time = 60
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event 2
+				time = 80
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 0
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 5
+					eventName = Spawn Unit
+					methodName = SpawnUnit
+				}
+			}
+		}
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = Villans
+			objectiveInfo = Destroy Eniemy WayPoint Set... Their Out There... x2...
+			objectiveID = 0
+			required = True
+			completionReward = 0
+			waypoint = 4
+			autoSetWaypoint = True
+			startMode = Immediate
+			objectiveType = Destroy
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Complete Objective
+						methodName = CompleteObjective
+					}
+				}
+			}
+			fields
+			{
+				targets = 0;5;
+				minRequired = 2
+				perUnitReward = 25269.6
+				fullCompleteBonus = 50023.49
+			}
+		}
+		Objective
+		{
+			objectiveName = Return
+			objectiveInfo = Try To Return Back To Home Base AircraftCarrier...
+			objectiveID = 1
+			required = True
+			completionReward = 10000
+			waypoint = 2
+			autoSetWaypoint = True
+			startMode = PreReqs
+			objectiveType = Fly_To
+			preReqObjectives = 0;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 6
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 2
+							name = wpt
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Complete Objective
+						methodName = CompleteObjective
+					}
+				}
+			}
+			fields
+			{
+				triggerRadius = 22110.53
+				sphericalRadius = True
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 0
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = Terrorist On On Their Way... Make Yours The Peaks of NorthStar.. The Way Point Is Set For You.. Head Up There and Take Out Any Insurgents Or Militia Force.. They Sould Be On Jet Planes... The Difficulty Is x2 War Jets... YouShould Rocket Up...///nDont Rely On Way Point.. 60 milePer.
+			imagePath = 7L\V2.jpg
+			audioClipPath = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+		}
+	}
+	ResourceManifest
+	{
+		0 = 7L\V2.jpg
+		1 = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+	}
+}
+

@@ -2,24 +2,25 @@ CustomScenario
 {
 	gameVersion = 0.0.14f1
 	campaignID = F45A-Honolulu
-	campaignOrderIdx = 0
+	campaignOrderIdx = 1
 	scenarioName = TopGun
 	scenarioID = TopGun
 	scenarioDescription = 2x-Jets... Medium Difficulty From Rear... Verry Hard From The Front... HaveFun...
 	mapID = Honolulu
 	vehicle = F-45A
 	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	forcedEquips = ;;;;;;;;;;;
 	forceEquips = False
-	normForcedFuel = 8
+	normForcedFuel = 1
 	equipsConfigurable = True
-	baseBudget = 1E+08
+	baseBudget = 900000
 	isTraining = False
 	rtbWptID = unit:1
 	refuelWptID = wpt:2
-	envName = Morning
-	selectableEnv = False
+	envName = morning
+	selectableEnv = True
 	qsMode = Anywhere
-	qsLimit = 0
+	qsLimit = -1
 	UNITS
 	{
 		UnitSpawner
@@ -30,7 +31,6 @@ CustomScenario
 			unitID = ASF-30
 			rotation = (0, 169.9539, 0)
 			spawnChance = 100
-			lastValidPlacement = (36599.9296875, 7331.291015625, 146328.99609375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -56,12 +56,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Aircraft Carrier
-			globalPosition = (13626.645568847656, -5, 69759.36962890625)
+			globalPosition = (13625.958053588867, -5, 69772.144989013672)
 			unitInstanceID = 1
 			unitID = AlliedCarrier
-			rotation = (0, 160.7971, 0)
+			rotation = (0, 337.8578, 0)
 			spawnChance = 100
-			lastValidPlacement = (13626.645568847656, -5, 69759.36962890625)
 			spawnFlags = 
 			UnitFields
 			{
@@ -84,7 +83,6 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 322.0397, 0)
 			spawnChance = 100
-			lastValidPlacement = (11955.259765625, -5, 71486.69482421875)
 			spawnFlags = 
 			UnitFields
 			{
@@ -106,7 +104,6 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.5657, 0)
 			spawnChance = 100
-			lastValidPlacement = (10220.33447265625, -5, 69223.97265625)
 			spawnFlags = 
 			UnitFields
 			{
@@ -128,7 +125,6 @@ CustomScenario
 			unitID = EscortCruiser
 			rotation = (0, 342.5657, 0)
 			spawnChance = 100
-			lastValidPlacement = (12189.583862304688, -5, 73904.927734375)
 			spawnFlags = 
 			UnitFields
 			{
@@ -150,7 +146,6 @@ CustomScenario
 			unitID = ASF-58
 			rotation = (0, 169.9539, 0)
 			spawnChance = 100
-			lastValidPlacement = (35109.94775390625, 7331.291015625, 146376.48828125)
 			spawnFlags = 
 			UnitFields
 			{
@@ -176,12 +171,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Player
-			globalPosition = (13592.89990234375, 18.97998046875, 69769.82177734375)
+			globalPosition = (13660.195114135742, 18.979995727539063, 69763.436950683594)
 			unitInstanceID = 6
 			unitID = PlayerSpawn
-			rotation = (0, 102.1471, 0)
+			rotation = (0, 279.2078, 0)
 			spawnChance = 100
-			lastValidPlacement = (13592.89990234375, 18.97998046875, 69769.82177734375)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -193,12 +187,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = F-45A
-			globalPosition = (13626.38232421875, 18.97998046875, 69868.664306640625)
+			globalPosition = (13631.82536315918, 18.979995727539063, 69663.007659912109)
 			unitInstanceID = 7
 			unitID = F-45A AI
-			rotation = (6.29955E-06, 214.7829, -3.143708E-06)
+			rotation = (6.299548E-06, 31.84352, -3.143708E-06)
 			spawnChance = 100
-			lastValidPlacement = (13626.38232421875, 18.97998046875, 69868.664306640625)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -225,12 +218,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = F/A-26B
-			globalPosition = (13584.3837890625, 18.97998046875, 69802.572998046875)
+			globalPosition = (13670.379516601563, 18.979995727539063, 69731.165557861328)
 			unitInstanceID = 8
 			unitID = FA-26B AI
-			rotation = (0, 102.1471, 0)
+			rotation = (0, 279.2078, 0)
 			spawnChance = 100
-			lastValidPlacement = (13584.3837890625, 18.97998046875, 69802.572998046875)
 			spawnFlags = carrier;
 			UnitFields
 			{
@@ -269,7 +261,7 @@ CustomScenario
 			id = 1
 			name = EnemyFire
 			loop = True
-			points = (43757.78515625, 707.5166015625, 95559.984375);(46151.015625, 1231.8046875, 93314.009765625);(37591.078125, 5316.32470703125, 85008.5703125);(30157.419921875, 3694.6259765625, 85611.703125);(22882.439453125, 3311.51611328125, 85031.626953125);(16701.44140625, 1163.2890625, 89523.998046875);(8338.96484375, 922.61572265625, 101931.56762695313);(14471.08984375, 922.615234375, 105783.763671875);(23436.9765625, 659.46484375, 105313.6875);(39905.71875, 707.5166015625, 99508.55615234375);
+			points = (43757.78125, 707.515625, 95559.984375);(46151.01171875, 1231.8037109375, 93314.0078125);(37591.07421875, 5316.32373046875, 85008.5703125);(30157.4140625, 3694.625, 85611.703125);(22882.4375, 3311.51513671875, 85031.625);(16701.4375, 1163.2880859375, 89524);(8338.9609375, 922.61474609375, 101931.5703125);(14471.0859375, 922.6142578125, 105783.765625);(23436.97265625, 659.4638671875, 105313.6875);(39905.71484375, 707.515625, 99508.5546875);
 			pathMode = Smooth
 		}
 	}
@@ -365,7 +357,6 @@ CustomScenario
 			objectiveName = Villans
 			objectiveInfo = Destroy Eniemy WayPoint Set... Their Out There... x2...
 			objectiveID = 0
-			orderID = 0
 			required = True
 			completionReward = 0
 			waypoint = 4
@@ -377,13 +368,6 @@ CustomScenario
 				EventInfo
 				{
 					eventName = Start Event
-					EventTarget
-					{
-						targetType = Objective
-						targetID = 0
-						eventName = Begin Objective
-						methodName = BeginObjective
-					}
 				}
 			}
 			failEvent
@@ -412,6 +396,13 @@ CustomScenario
 						eventName = Begin Objective
 						methodName = BeginObjective
 					}
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Complete Objective
+						methodName = CompleteObjective
+					}
 				}
 			}
 			fields
@@ -425,15 +416,15 @@ CustomScenario
 		Objective
 		{
 			objectiveName = Return
-			objectiveInfo = Try To Return Back To Home Base or Ditch It...
+			objectiveInfo = Try To Return Back To Home Base AircraftCarrier...
 			objectiveID = 1
-			orderID = 1
 			required = True
-			completionReward = 0
-			waypoint = null
+			completionReward = 10000
+			waypoint = 2
 			autoSetWaypoint = True
-			startMode = Final
+			startMode = PreReqs
 			objectiveType = Fly_To
+			preReqObjectives = 0;
 			startEvent
 			{
 				EventInfo
@@ -484,7 +475,7 @@ CustomScenario
 			}
 			fields
 			{
-				triggerRadius = 2000
+				triggerRadius = 22110.53
 				sphericalRadius = True
 			}
 		}
@@ -493,12 +484,6 @@ CustomScenario
 	{
 	}
 	Conditionals
-	{
-	}
-	ConditionalActions
-	{
-	}
-	EventSequences
 	{
 	}
 	BASES

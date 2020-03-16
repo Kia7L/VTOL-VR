@@ -1,0 +1,346 @@
+CustomScenario
+{
+	gameVersion = 0.0.14f1
+	campaignID = F45A-Honolulu
+	campaignOrderIdx = 0
+	scenarioName = AirCraft-Carrier-Delivery
+	scenarioID = AirCraftDelivery
+	scenarioDescription = Deliver The Stealth-Jet To The WayPoint... This Is Landing On An Aircraft-Carrier.. Have fun...
+	mapID = Honolulu
+	vehicle = F-45A
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	forcedEquips = ;;;;;;;;;;;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 900000
+	isTraining = False
+	rtbWptID = 
+	refuelWptID = 
+	envName = day
+	selectableEnv = False
+	qsMode = Anywhere
+	qsLimit = -1
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Player
+			globalPosition = (86797.38916015625, 64.967498779296875, 37601.297180175781)
+			unitInstanceID = 0
+			unitID = PlayerSpawn
+			rotation = (-1.008559E-05, 359.8062, -6.797807E-06)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				startMode = Cold
+				initialSpeed = 0
+				unitGroup = Allied:Romeo
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Aircraft Carrier
+			globalPosition = (10904.326171875, -5, 76248.85302734375)
+			unitInstanceID = 2
+			unitID = AlliedCarrier
+			rotation = (0, 329.5964, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (9745.84765625, -5, 81954.107421875)
+			unitInstanceID = 3
+			unitID = EscortCruiser
+			rotation = (0, 329.5964, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (7202.380859375, -5, 82680.841796875)
+			unitInstanceID = 4
+			unitID = EscortCruiser
+			rotation = (0, 329.5964, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser
+			globalPosition = (4207.359375, -5, 81780.904296875)
+			unitInstanceID = 5
+			unitID = EscortCruiser
+			rotation = (0, 329.5964, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+			}
+		}
+	}
+	PATHS
+	{
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = Landing
+			globalPoint = (10913.135063171387, 20.472000122070313, 76230.281280517578)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = Parking
+			globalPoint = (10937.728672027588, 20.472002029418945, 76245.189712524414)
+		}
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Romeo = 2;0;
+		}
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = TakeOff-Land
+			objectiveInfo = Deliver The New Stealth Jet,.. To The AircraftCarrier... And Land..
+			objectiveID = 0
+			required = True
+			completionReward = 900000
+			waypoint = 0
+			autoSetWaypoint = True
+			startMode = Immediate
+			objectiveType = Land
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 0
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 0
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 0
+							name = wpt
+						}
+					}
+				}
+			}
+			fields
+			{
+				radius = 10000
+			}
+		}
+		Objective
+		{
+			objectiveName = Parking-Refuil
+			objectiveInfo = Park To Refuel... After Full... FINISH End...
+			objectiveID = 1
+			required = True
+			completionReward = 1000000
+			waypoint = 1
+			autoSetWaypoint = True
+			startMode = PreReqs
+			objectiveType = Land
+			preReqObjectives = 0;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Begin Objective
+						methodName = BeginObjective
+					}
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 0
+						eventName = Set Waypoint
+						methodName = SetWaypoint
+						ParamInfo
+						{
+							type = Waypoint
+							value = 1
+							name = wpt
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Fail Objective
+						methodName = FailObjective
+					}
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+					EventTarget
+					{
+						targetType = Objective
+						targetID = 1
+						eventName = Complete Objective
+						methodName = CompleteObjective
+					}
+				}
+			}
+			fields
+			{
+				radius = 1499.8
+			}
+		}
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 0
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+		}
+	}
+	Briefing
+	{
+		BRIEFING_NOTE
+		{
+			text = Deliver Your Package And Rest For Another Day... We need You Back for More Later... You Have To Land On The Aircraft-Carrier To WayPoint.... Remember To Cut Throttle To 50%///nDeliver Stealth-Jet in one Peace And Survive For Another Day...
+			imagePath = 7L\AircraftCarrier.jpg
+			audioClipPath = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+		}
+	}
+	ResourceManifest
+	{
+		0 = 7L\AircraftCarrier.jpg
+		1 = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
+	}
+}
+
