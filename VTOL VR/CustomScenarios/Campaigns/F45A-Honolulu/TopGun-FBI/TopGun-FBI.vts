@@ -5,11 +5,11 @@ CustomScenario
 	campaignOrderIdx = 3
 	scenarioName = TopGun-FBI
 	scenarioID = TopGun-FBI
-	scenarioDescription = 2x-Jets+2x-Boats... Medium Difficulty From Rear... Verry Hard From The Front... This is a Top secret Mission From FBI To Destroy Cartel Cydicates Drug War Lords...
+	scenarioDescription = 2x-Jets+2x-Boats... Medium Difficulty From Rear... Very Hard From The Front... This is a Top secret Mission From FBI To Destroy Cartel Cydi
 	mapID = Honolulu
 	vehicle = F-45A
-	startingEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
-	forcedEquips = ;;;;;;;;;;;;;;;;
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	forcedEquips = ;;;;;;;;;;;
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
@@ -99,10 +99,10 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Cruiser
-			globalPosition = (10220.33447265625, -5, 69223.97265625)
+			globalPosition = (11783.370422363281, -5, 69711.804931640625)
 			unitInstanceID = 3
 			unitID = EscortCruiser
-			rotation = (0, 342.5657, 0)
+			rotation = (0, 343.8596, 0)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
@@ -120,10 +120,10 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Cruiser
-			globalPosition = (12189.583862304688, -5, 73904.927734375)
+			globalPosition = (12115.52392578125, -5, 73139.405029296875)
 			unitInstanceID = 4
 			unitID = EscortCruiser
-			rotation = (0, 342.5657, 0)
+			rotation = (0, 343.8596, 0)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
@@ -248,20 +248,20 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Rocket Boat
-			globalPosition = (43853.751800537109, -5, 109386.09423828125)
+			globalPosition = (43965.265380859375, -5, 109300.08959960938)
 			unitInstanceID = 9
 			unitID = DroneGunBoatRocket
-			rotation = (0, 214.425, 0)
+			rotation = (0, 206.843, 0)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
 			{
-				unitGroup = Enemy:Mike
+				unitGroup = null
 				defaultBehavior = Parked
 				defaultWaypoint = null
 				defaultPath = null
 				engageEnemies = True
-				detectionMode = Default
+				detectionMode = Force_Detected
 				spawnOnStart = True
 				invincible = False
 			}
@@ -269,15 +269,15 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Gun Boat
-			globalPosition = (43714.839920043945, -5, 109364.65295410156)
+			globalPosition = (43829.486572265625, -5, 108966.67504882813)
 			unitInstanceID = 10
 			unitID = DroneGunBoat
-			rotation = (0, 214.425, 0)
+			rotation = (0, 238.053, 0)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
 			{
-				unitGroup = Enemy:Mike
+				unitGroup = null
 				defaultBehavior = Parked
 				defaultWaypoint = null
 				defaultPath = null
@@ -293,7 +293,7 @@ CustomScenario
 			globalPosition = (43937.355895996094, 13.65325927734375, 108452.67578125)
 			unitInstanceID = 11
 			unitID = EnemySoldier
-			rotation = (8.821126, 1.348612, 0.2068471)
+			rotation = (8.821129, 1.348612, 0.2068471)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
@@ -332,10 +332,10 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Infantry MANPADS
-			globalPosition = (43939.567092895508, 11.72747802734375, 108465.08281707764)
+			globalPosition = (43941.329879760742, 12.45458984375, 108460.39758300781)
 			unitInstanceID = 13
 			unitID = EnemySoldierMANPAD
-			rotation = (8.820621, 1.483324, 0.2275047)
+			rotation = (8.813466, 357.2413, 359.577)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
@@ -368,6 +368,65 @@ CustomScenario
 				waypoint = null
 				engageEnemies = False
 				detectionMode = Force_Undetected
+				spawnOnStart = True
+				invincible = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (30000.195678710938, 7331.291015625, 185691.72314453125)
+			unitInstanceID = 15
+			unitID = ASF-30
+			rotation = (0, 171.6003, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Echo
+				defaultBehavior = Orbit
+				initialSpeed = 572.4053
+				defaultNavSpeed = 402.6865
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 4850.869
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				equips = asf30_gun;asf-srmx1;asf-srmx1;asf_mrmRail;asf_mrmRail;asf_mrmDrop;asf_mrmDrop;asf_mrmRail;asf_mrmRail;asf-srmx1;asf-srmx1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (29936.792846679688, 7324.16064453125, 185817.22314453125)
+			unitInstanceID = 16
+			unitID = ASF-30
+			rotation = (0, 174.9548, 0)
+			spawnChance = 100
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = Enemy:Echo
+				defaultBehavior = Orbit
+				initialSpeed = 608.1438
+				defaultNavSpeed = 320.8955
+				defaultOrbitPoint = 4
+				defaultPath = 1
+				orbitAltitude = 4700.799
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				engageEnemies = True
+				detectionMode = Default
 				spawnOnStart = True
 				invincible = False
 			}
@@ -410,13 +469,13 @@ CustomScenario
 		{
 			id = 2
 			name = Carrier
-			globalPoint = (13574.468536376953, 31.26116943359375, 69908.2783203125)
+			globalPoint = (13590.070709228516, -5, 69788.407653808594)
 		}
 		WAYPOINT
 		{
 			id = 4
 			name = Peak
-			globalPoint = (34781.51220703125, 7331.291015625, 87341.83203125)
+			globalPoint = (34819.659912109375, 6670.04296875, 87510.8359375)
 		}
 		WAYPOINT
 		{
@@ -434,7 +493,7 @@ CustomScenario
 		{
 			id = 7
 			name = Drug Deal
-			globalPoint = (43773.795951843262, 546.4385986328125, 109213.162109375)
+			globalPoint = (43863.346832275391, 320.6102294921875, 108766.28344726563)
 		}
 	}
 	UNITGROUPS
@@ -443,6 +502,7 @@ CustomScenario
 		{
 			Kilo = 2;5;0;
 			Tango = 0;13;12;11;
+			Echo = 2;15;16;
 		}
 	}
 	TimedEventGroups
@@ -459,23 +519,23 @@ CustomScenario
 				time = 50
 				EventTarget
 				{
-					targetType = Unit
-					targetID = 0
-					eventName = Spawn Unit
-					methodName = SpawnUnit
-				}
-				EventTarget
-				{
-					targetType = Unit
-					targetID = 5
-					eventName = Spawn Unit
-					methodName = SpawnUnit
+					targetType = UnitGroup
+					targetID = 210
+					eventName = Spawn All
+					methodName = SpawnAll
 				}
 			}
 			TimedEventInfo
 			{
 				eventName = New Timed Event 2
-				time = 160
+				time = 180
+				EventTarget
+				{
+					targetType = UnitGroup
+					targetID = 204
+					eventName = Spawn All
+					methodName = SpawnAll
+				}
 			}
 		}
 	}
@@ -539,8 +599,8 @@ CustomScenario
 			}
 			fields
 			{
-				targets = 0;5;
-				minRequired = 2
+				targets = 0;5;15;16;
+				minRequired = 4
 				perUnitReward = 25269.6
 				fullCompleteBonus = 50023.49
 			}
@@ -552,29 +612,16 @@ CustomScenario
 			objectiveID = 1
 			required = True
 			completionReward = 10000
-			waypoint = 2
+			waypoint = unit:1
 			autoSetWaypoint = True
 			startMode = PreReqs
-			objectiveType = Fly_To
+			objectiveType = Land
 			preReqObjectives = 2;
 			startEvent
 			{
 				EventInfo
 				{
 					eventName = Start Event
-					EventTarget
-					{
-						targetType = Unit
-						targetID = 6
-						eventName = Set Waypoint
-						methodName = SetWaypoint
-						ParamInfo
-						{
-							type = Waypoint
-							value = 2
-							name = wpt
-						}
-					}
 				}
 			}
 			failEvent
@@ -607,8 +654,7 @@ CustomScenario
 			}
 			fields
 			{
-				triggerRadius = 20000.53
-				sphericalRadius = True
+				radius = 1087.441
 			}
 		}
 		Objective
@@ -628,19 +674,6 @@ CustomScenario
 				EventInfo
 				{
 					eventName = Start Event
-					EventTarget
-					{
-						targetType = Unit
-						targetID = 6
-						eventName = Set Waypoint
-						methodName = SetWaypoint
-						ParamInfo
-						{
-							type = Waypoint
-							value = 7
-							name = wpt
-						}
-					}
 				}
 			}
 			failEvent
@@ -674,7 +707,7 @@ CustomScenario
 			fields
 			{
 				targets = 9;10;11;12;13;
-				minRequired = 2
+				minRequired = 5
 				perUnitReward = 21143.95
 				fullCompleteBonus = 40740.78
 			}
@@ -711,7 +744,7 @@ CustomScenario
 	{
 		BRIEFING_NOTE
 		{
-			text = FBI MISSION - TOP SECRET : Theirs A Drug Cartel Out Their, They Are Iran Reiegn... x4 Protective-Enemy... Try To Take Them Out...!!!
+			text = FBI MISSION - TOP SECRET : Theirs A Drug Cartel Out Their, They Are Iran Regiegn... x4 Protective-Enemy... Try To Take Them Out...!!!
 			imagePath = 7L\drugs.jpg
 			audioClipPath = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
 		}

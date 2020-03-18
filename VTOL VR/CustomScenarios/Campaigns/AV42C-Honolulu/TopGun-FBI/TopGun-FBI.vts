@@ -5,11 +5,11 @@ CustomScenario
 	campaignOrderIdx = 3
 	scenarioName = TopGun-FBI
 	scenarioID = TopGun-FBI
-	scenarioDescription = 2x-Jets+2x-Boats... Medium Difficulty From Rear... Verry Hard From The Front... This is a Top secret Mission From FBI To Destroy Cartel Cydicates Drug War Lords...
+	scenarioDescription = 2x-Jets+2x-Boats... Medium Difficulty From Rear... Verry Hard From The Front... This is a Top secret Mission From FBI To Destroy Cartel Cydi
 	mapID = Honolulu
 	vehicle = AV-42C
 	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;
-	forcedEquips = ;;;;;;;;;;;;;;;;
+	forcedEquips = ;;;;;;;
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
@@ -293,7 +293,7 @@ CustomScenario
 			globalPosition = (43937.355895996094, 13.65325927734375, 108452.67578125)
 			unitInstanceID = 11
 			unitID = EnemySoldier
-			rotation = (8.821126, 1.348612, 0.2068471)
+			rotation = (8.821127, 1.348612, 0.2068471)
 			spawnChance = 100
 			spawnFlags = 
 			UnitFields
@@ -555,26 +555,13 @@ CustomScenario
 			waypoint = 2
 			autoSetWaypoint = True
 			startMode = PreReqs
-			objectiveType = Fly_To
-			preReqObjectives = 2;
+			objectiveType = Land
+			preReqObjectives = 2;0;
 			startEvent
 			{
 				EventInfo
 				{
 					eventName = Start Event
-					EventTarget
-					{
-						targetType = Unit
-						targetID = 6
-						eventName = Set Waypoint
-						methodName = SetWaypoint
-						ParamInfo
-						{
-							type = Waypoint
-							value = 2
-							name = wpt
-						}
-					}
 				}
 			}
 			failEvent
@@ -607,8 +594,7 @@ CustomScenario
 			}
 			fields
 			{
-				triggerRadius = 20000.53
-				sphericalRadius = True
+				radius = 1242.076
 			}
 		}
 		Objective
@@ -628,19 +614,6 @@ CustomScenario
 				EventInfo
 				{
 					eventName = Start Event
-					EventTarget
-					{
-						targetType = Unit
-						targetID = 6
-						eventName = Set Waypoint
-						methodName = SetWaypoint
-						ParamInfo
-						{
-							type = Waypoint
-							value = 7
-							name = wpt
-						}
-					}
 				}
 			}
 			failEvent
@@ -674,7 +647,7 @@ CustomScenario
 			fields
 			{
 				targets = 9;10;11;12;13;
-				minRequired = 2
+				minRequired = 5
 				perUnitReward = 21143.95
 				fullCompleteBonus = 40740.78
 			}
@@ -711,7 +684,7 @@ CustomScenario
 	{
 		BRIEFING_NOTE
 		{
-			text = FBI MISSION - TOP SECRET : Theirs A Drug Cartel Out Their, They Are Iran Reiegn... x4 Protective-Enemy... Try To Take Them Out...!!!
+			text = FBI MISSION - TOP SECRET : Theirs A Drug Cartel Out Their, They Are Iran Regiegn... x4 Protective-Enemy... Try To Take Them Out...!!!
 			imagePath = 7L\drugs.jpg
 			audioClipPath = 7L\David Bowie - Cat People (Putting Out Fire) Music Video HQ.ogg
 		}

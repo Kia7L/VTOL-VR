@@ -5,11 +5,11 @@ VTMapCustom
 	mapDescription = Oahu Hawaii... Hawaiian...
 	mapType = HeightMap
 	edgeMode = Ocean:Sea:Water
-	biome = Sky:Clouds
-	seed = seed
+	biome = Sky:Clouds:Smoke
+	seed = seed:bush:plants
 	mapSize = 51
 	mapHeight = 11
-	snowSize = 0.0000001
+	snowSize = 0.000000041
 	mountainSize = 9
 	TerrainSettings
 	{
