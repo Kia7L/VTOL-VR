@@ -9,7 +9,7 @@ VTMapCustom
 	seed = seed:bush:plants
 	mapSize = 51
 	mapHeight = 11
-	snowSize = 0.000000041
+	snowSize = 0.000000001
 	mountainSize = 9
 	TerrainSettings
 	{

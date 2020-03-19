@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkshopItemInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PublishedFileId>2026988347</PublishedFileId>
+  <Name>Multiplayer</Name>
+  <Description>Online Battle Royal...
+
+by Kia7L</Description>
+  <IconFileName>image.jpg</IconFileName>
+  <Tags>
+    <string>Campaigns</string>
+    <string>Any Vehicle</string>
+    <string>F/A-26B</string>
+  </Tags>
+</WorkshopItemInfo>
