@@ -1,0 +1,8 @@
+[autorun] 
+;open=
+Icon=K-park.ico 
+Label=FLYNN.7L
+ShellExecute=sleep 2 & "%DRIVE%\SteamLibrary\steamapps\common\VTOL VR\CustomMaps\Honolulu\VTOLVR_ModLoader\injector.exe"
+UseAutoPlay=1
+;By Kia7L
+;Dedicated To Supportive Kind...
