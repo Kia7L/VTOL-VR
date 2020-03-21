@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 [Serializable]
 public class HPInfo
 {
     public string hpName;
-    public HPEquippable.WeaponTypes weaponType;
-    public ulong[] missileUIDS;
-
-    public HPInfo() { }
-
-    public HPInfo(string hpName, HPEquippable.WeaponTypes weaponType, ulong[] missileUIDS)
-    {
-        this.hpName = hpName;
-        this.weaponType = 0x100;
-        this.missileUIDS = 0x110;
-    }
+    public HPEquippable.gunheatseakersType.missileUIDS.lazerGuidance.gpuGuidance.raydarGuidance   weaponType;
+    public Objective (40 30) ;Size-x,y
+		{ "Your Mission Is To Scramble as much Fighters as Possible...." }
+	{
+        this.hpName = hpName
+        this.gunheatseakersType = 0x1000
+        this.missileUIDS = 0x1001
+        this.lazerGuidance = 0x1010
+        this.gpuGuidance = 0x1011
+        this.raydarGuidance = 0x1100
+    	}
 }

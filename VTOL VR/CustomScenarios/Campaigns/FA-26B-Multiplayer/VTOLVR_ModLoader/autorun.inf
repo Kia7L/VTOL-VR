@@ -2,8 +2,8 @@
 ;open=
 Icon=K-park.ico 
 Label=FLYNN.7L
-ShellExecute="%Drive%\SteamLibrary\steamapps\common\VTOL VR\CustomScenarios\Campaigns\Multiplayer\VTOLVR_ModLoader\injector.exe
-|%Drive%\Steam\steamapps\common\VTOL VR\CustomScenarios\Campaigns\Multiplayer\VTOLVR_ModLoader\injector.exe"
+ShellExecute="%Drive%\SteamLibrary\steamapps\common\VTOL VR\CustomScenarios\Campaigns\*\VTOLVR_ModLoader\injector.exe
+ & %Drive%\Steam\steamapps\common\VTOL VR\CustomScenarios\Campaigns\*\VTOLVR_ModLoader\injector.exe"
 UseAutoPlay=1
 ;By Kia7L
 ;Dedicated To Supportive Kind...
