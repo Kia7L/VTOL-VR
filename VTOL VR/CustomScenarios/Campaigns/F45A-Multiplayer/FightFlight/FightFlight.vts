@@ -1,6 +1,6 @@
 CustomScenario
 {
-	gameVersion = 0.0.15f1 
+	gameVersion = 0.0.15f1
 	campaignID = F45A-Multiplayer
 	campaignOrderIdx = 0
 	scenarioName = Multiplayer Royal
@@ -8,16 +8,17 @@ CustomScenario
 	scenarioDescription = Steam Server Lobby... Team Online Battle... Free Play... Mod Enable...
 	mapID = Honolulu
 	vehicle = F-45A
-	startingEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;
+	allowedEquips = f45_gun;f45_sidewinderx2;f45_aim9x1;f45_amraamInternal;f45_amraamRail;f45_mk82x1;f45_mk82Internal;f45_mk82x4Internal;f45_gbu12x2Internal;f45_gbu12x1;f45-gbu39;f45_agm161;f45_agm161Internal;f45_droptank;f45_gbu38x1;f45_gbu38x2Internal;f45_gbu38x4Internal;f45_mk83x1;f45_mk83x1Internal;f45-agm145I;f45-agm145x3;f45-gbu53;
+	forcedEquips = ;;;;;;;;;;;
 	forceEquips = False
 	normForcedFuel = 1
 	equipsConfigurable = True
 	baseBudget = 100000
 	isTraining = False
-	rtbWptID = 
-	refuelWptID = 
-	envName = day
-	selectableEnv = False
+	rtbWptID = unit:1
+	refuelWptID = wpt:2
+	envName = morning
+	selectableEnv = True
 	qsMode = Anywhere
 	qsLimit = -1
 	UNITS
@@ -42,7 +43,7 @@ CustomScenario
 				detectionMode = Default
 				spawnOnStart = True
 				invincible = False
-				carrierSpawns = 0:-1;1:-1;2:-1;3:-1;4:-1;5:6;6:-1;7:-1;8:-1;
+				carrierSpawns = 0:-1;1:13;2:12;3:-1;4:-1;5:6;6:11;7:-1;8:-1;
 			}
 		}
 		UnitSpawner
@@ -114,7 +115,7 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Player
-			globalPosition = (80247.55712890625, 18.979995727539063, 27132.685546875)
+			globalPosition = (80247.55859375, 18.98046875, 27132.6875)
 			unitInstanceID = 6
 			unitID = PlayerSpawn
 			rotation = (0, 214.8579, 0)
@@ -131,13 +132,13 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Enemy
-			globalPosition = (123506.29528808594, 67.217597961425781, 75072.808959960938)
+			globalPosition = (122647.576171875, 13.5302734375, 80641.7392578125)
 			unitInstanceID = 10
 			unitID = ASF-30
-			rotation = (1.336085E-05, 198.5103, 1.863863E-06)
+			rotation = (0, 250.1522, 0)
 			spawnChance = 100
 			lastValidPlacement = (123506.29528808594, 67.217597961425781, 75072.808959960938)
-			spawnFlags = 
+			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Enemy:Foxtrot
@@ -161,19 +162,19 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = F-45A
-			globalPosition = (86794.169738769531, 66.7474365234375, 37608.498474121094)
+			globalPosition = (80220.00390625, 18.98046875, 27132.34765625)
 			unitInstanceID = 11
 			unitID = F-45A AI
-			rotation = (-1.026708E-05, 358.2447, -6.520447E-06)
+			rotation = (0, 214.8579, 0)
 			spawnChance = 100
 			lastValidPlacement = (86794.169738769531, 66.7474365234375, 37608.498474121094)
-			spawnFlags = 
+			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Allied:Alpha
 				voiceProfile = null
 				playerCommandsMode = Unit_Group_Only
-				defaultBehavior = Parked
+				defaultBehavior = Orbit
 				initialSpeed = 220
 				defaultNavSpeed = 220
 				defaultOrbitPoint = null
@@ -184,7 +185,7 @@ CustomScenario
 				autoRTB = False
 				defaultRadarEnabled = False
 				rtbDestination = map:1
-				engageEnemies = False
+				engageEnemies = True
 				detectionMode = Default
 				spawnOnStart = True
 				invincible = False
@@ -193,19 +194,19 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = F/A-26B
-			globalPosition = (86604.879639148712, 67.367469787597656, 37612.420806884766)
+			globalPosition = (80325.80859375, 18.98046875, 27063.640625)
 			unitInstanceID = 12
 			unitID = FA-26B AI
-			rotation = (-1.026708E-05, 358.2447, -6.520447E-06)
+			rotation = (6.299548E-06, 327.4937, -3.143708E-06)
 			spawnChance = 100
 			lastValidPlacement = (86604.879639148712, 67.367469787597656, 37612.420806884766)
-			spawnFlags = 
+			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Allied:Alpha
 				voiceProfile = null
 				playerCommandsMode = Unit_Group_Only
-				defaultBehavior = Parked
+				defaultBehavior = Orbit
 				initialSpeed = 220
 				defaultNavSpeed = 220
 				defaultOrbitPoint = null
@@ -216,7 +217,7 @@ CustomScenario
 				autoRTB = False
 				defaultRadarEnabled = False
 				rtbDestination = map:1
-				engageEnemies = False
+				engageEnemies = True
 				detectionMode = Default
 				spawnOnStart = True
 				invincible = False
@@ -225,19 +226,19 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = AV-42C
-			globalPosition = (86410.793151855469, 67.307498931884766, 37611.458099365234)
+			globalPosition = (80349.26171875, 18.98046875, 27069.66796875)
 			unitInstanceID = 13
 			unitID = AV-42CAI
-			rotation = (-1.026708E-05, 358.2447, -6.520447E-06)
+			rotation = (6.33503E-06, 328.1478, -3.071584E-06)
 			spawnChance = 100
 			lastValidPlacement = (86410.793151855469, 67.307498931884766, 37611.458099365234)
-			spawnFlags = 
+			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Allied:Alpha
 				voiceProfile = null
 				playerCommandsMode = Unit_Group_Only
-				defaultBehavior = Parked
+				defaultBehavior = Orbit
 				initialSpeed = 180
 				defaultNavSpeed = 180
 				defaultOrbitPoint = null
@@ -247,7 +248,7 @@ CustomScenario
 				autoRefuel = False
 				autoRTB = False
 				rtbDestination = 
-				engageEnemies = False
+				engageEnemies = True
 				detectionMode = Default
 				spawnOnStart = True
 				invincible = False
@@ -255,26 +256,26 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = ASF-58
-			globalPosition = (122973.93060302734, 67.217514038085938, 74525.356567382813)
-			unitInstanceID = 14
-			unitID = ASF-58
-			rotation = (1.955718E-06, 108.9044, -1.334771E-05)
+			unitName = ASF-30
+			globalPosition = (122561.71484375, 13.5302734375, 80564.873046875)
+			unitInstanceID = 19
+			unitID = ASF-30
+			rotation = (0, 40.8319, 0)
 			spawnChance = 100
-			lastValidPlacement = (122973.93060302734, 67.217514038085938, 74525.356567382813)
-			spawnFlags = 
+			lastValidPlacement = (123570.8310546875, 65.30859375, 73878.0908203125)
+			spawnFlags = carrier;
 			UnitFields
 			{
-				unitGroup = Enemy:Foxtrot
-				defaultBehavior = Parked
+				unitGroup = null
+				defaultBehavior = Orbit
 				initialSpeed = 220
-				defaultNavSpeed = 515.7059
-				defaultOrbitPoint = null
+				defaultNavSpeed = 220
+				defaultOrbitPoint = 7
 				defaultPath = null
-				orbitAltitude = 8000
+				orbitAltitude = 3000
 				fuel = 100
-				autoRefuel = False
-				autoRTB = False
+				autoRefuel = True
+				autoRTB = True
 				defaultRadarEnabled = True
 				rtbDestination = 
 				engageEnemies = True
@@ -286,13 +287,13 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = ASF-33
-			globalPosition = (122908.50946044922, 67.217487335205078, 74346.106811523438)
+			globalPosition = (122701.435546875, 13.5302734375, 80570.279296875)
 			unitInstanceID = 15
 			unitID = ASF-33
-			rotation = (1.955718E-06, 108.9044, -1.334771E-05)
+			rotation = (0, 240.614, 0)
 			spawnChance = 100
 			lastValidPlacement = (122908.50946044922, 67.217487335205078, 74346.106811523438)
-			spawnFlags = 
+			spawnFlags = carrier;
 			UnitFields
 			{
 				unitGroup = Enemy:Foxtrot
@@ -342,6 +343,59 @@ CustomScenario
 				invincible = False
 			}
 		}
+		UnitSpawner
+		{
+			unitName = NFP Carrier
+			globalPosition = (122635.224609375, -5, 80560.6796875)
+			unitInstanceID = 17
+			unitID = EnemyCarrier
+			rotation = (0, 325.4922, 0)
+			spawnChance = 100
+			lastValidPlacement = (122635.224609375, -5, 80560.6796875)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				carrierSpawns = 0:-1;1:-1;2:-1;3:-1;4:19;5:15;6:-1;7:10;8:-1;9:-1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-58
+			globalPosition = (123570.83203125, 65.30859375, 73878.0908203125)
+			unitInstanceID = 22
+			unitID = ASF-58
+			rotation = (3.908622E-06, 325.4922, -2.687105E-06)
+			spawnChance = 100
+			lastValidPlacement = (123570.83203125, 65.30859375, 73878.0908203125)
+			spawnFlags = 
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 8000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = unit:17
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+			}
+		}
 	}
 	PATHS
 	{
@@ -358,12 +412,13 @@ CustomScenario
 			id = 1
 			name = EnemyFire
 			loop = True
-			points = (43757.78125, 707.515625, 95559.984375);(46151.015625, 1231.8037109375, 93314.0078125);(37591.078125, 5316.32373046875, 85008.5703125);(30157.4140625, 3694.625, 85611.703125);(22882.4375, 3311.51513671875, 85031.625);(16701.4375, 1163.2880859375, 89524);(8338.9609375, 922.61474609375, 101931.5703125);(14471.0859375, 922.6142578125, 105783.765625);(23436.96875, 659.4638671875, 105313.6875);(39905.71875, 707.515625, 99508.5546875);
+			points = (43757.78125, 707.515625, 95559.984375);(46151.015625, 1231.8037109375, 93314.0078125);(37591.078125, 5316.32421875, 85008.5703125);(30157.4140625, 3694.625, 85611.703125);(22882.4375, 3311.515625, 85031.625);(16701.4375, 1163.2880859375, 89524);(8338.9609375, 922.615234375, 101931.5703125);(14471.0859375, 922.6142578125, 105783.765625);(23436.96875, 659.4638671875, 105313.6875);(39905.71875, 707.515625, 99508.5546875);
 			pathMode = Smooth
 		}
 	}
 	WAYPOINTS
 	{
+		bullseyeID = 7
 		WAYPOINT
 		{
 			id = 0
@@ -433,7 +488,7 @@ CustomScenario
 		}
 		ENEMY
 		{
-			Foxtrot = 2;15;14;10;16;
+			Foxtrot = 2;15;10;16;
 		}
 	}
 	TimedEventGroups
